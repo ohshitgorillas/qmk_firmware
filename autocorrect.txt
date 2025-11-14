@@ -1,13 +1,18 @@
 uthhe -> (U-Th)/He
-myuch -> much
-idsaster -> disaster
 acrn -> Alphachron
+carribean -> Caribbean
 :atcually -> actually
 :agian -> again
 anaylsis -> analysis
 :annd: -> and
 :anmd: -> and
 :amnd: -> and
+:andone -> and one
+:andteh -> and the
+:andthe -> and the
+:asthe -> as the
+asiude -> aside
+:atthe -> at the
 augth -> aught
 basleine -> baseline
 bsaeline -> baseline
@@ -15,35 +20,48 @@ baselein -> baseline
 bascially -> basically
 baiscally -> basically
 bsaically -> basically
+:eb: -> be
 befroe -> before
 begnning -> beginning
 beign -> being
 btween -> between
 nigger -> bigger
+:cna: -> can
 :cant' -> can't
 cazn't -> can't
-carribean -> Caribbean
 cuase -> cause
 :chink: -> chunk
+:clera -> clear
+:comptete -> complete
 cosnider -> consider
 cosntant -> constant
 couldnt' -> couldn't
+idsaster -> disaster
 doesnt' -> doesn't
 doiesn't -> doesn't
-toigether -> together
+odesn't -> doesn't
 :dont' -> don't
+:eigth -> eight
 eitehr -> either
 iether -> either
+:eiter -> either
+:esle -> else
+:eles -> else
 eamil -> email
 enoguh -> enough
+:ect: -> etc
 exatcly -> exactly
 exmaple -> example
+:efel -> feel
 figth -> fight
 :fo:rme: -> for me
 forfgot -> forgot
 forgfot -> forgot
 fourty -> forty
 ferquently -> frequently
+freind -> friend
+frienbd -> friend
+fromthe -> from the
 fukc -> fuck
 fcuk -> fuck
 hgt -> ght
@@ -56,34 +74,49 @@ havbe -> have
 havent' -> haven't
 havign -> having
 havnig -> having
-husbnad -> husband
-lkike -> like
-terriuble -> terrible
-asiude -> aside
 hedaphones -> headphones
 headpohnes -> headphones
 headhpones -> headphones
+:ehr -> her
 hwoever -> however
 howveer -> however
+husbnad -> husband
+:inm: -> in
 :int:he: -> in the
 :i:nthe -> in the
+isntance -> instance
+instgance -> instance
 inmto -> into
+:inot: -> into
+:itis -> it is
+jsut -> just
 keyborad -> keyboard
+knjee -> knee
+:knwo -> know
+:konw -> know
+:kwno -> know
+lsat -> last
+lkike -> like
 :kike: -> like
 :liek: -> like
 luike -> like
 lkign -> lking
+:amde -> made
 :amke: -> make
 :maek -> make
 :amking -> making
 measn -> means
 mesaurement -> measurement
+myuch -> much
 nexst -> next
 nmext -> next
 nomral -> normal
 normla -> normal
+:nto: -> not
+oprder -> order
 :otehr -> other
 :erally -> really
+reqiure -> require
 rigth -> right
 :serously -> seriously
 shouldnt' -> shouldn't
@@ -93,6 +126,8 @@ soemthing -> something
 sonud -> sound
 specfic -> specific
 stnad -> stand
+:atp: -> tap
+terriuble -> terrible
 thansk -> thanks
 :taht -> that
 :thta: -> that
@@ -105,39 +140,10 @@ thinmg -> thing
 thimng -> thing
 thign -> thing
 thiung -> thing
+htink -> think
 thiunk -> think
 thrid -> third
 thjis -> this
-oprder -> order
-:inm: -> in
-knjee -> knee
-:amde -> made
-:asthe -> as the
-:atp: -> tap
-:atthe -> at the
-:clera -> clear
-:cna: -> can
-:comptete -> complete
-:esle -> else
-:eyar -> year
-:inot: -> into
-:itis -> it is
-:knwo -> know
-:konw -> know
-:kwno -> know
-fromthe -> from the
-isntance -> instance
-instgance -> instance
-:eb: -> be
-:ect: -> etc
-:efel -> feel
-:ehr -> her
-:eigth -> eight
-:eiter -> either
-:eles -> else
-:andone -> and one
-:andteh -> and the
-:andthe -> and the
 :thius -> this
 :thsi -> this
 thisis -> this is
@@ -145,6 +151,7 @@ thisis -> this is
 tohave -> to have
 :tot:he: -> to the
 todya -> today
+toigether -> together
 tonght -> tonight
 :tyring -> trying
 usiung -> using
@@ -155,11 +162,10 @@ whjat -> what
 whenver -> whenever
 hwich -> which
 :wiht -> with
-lsat -> last
-:nto: -> not
 :iwth -> with
 witht:he -> with the
 wit:hthe -> with the
 :wont' -> won't
 wokr -> work
 wouldnt' -> wouldn't
+:eyar -> year
