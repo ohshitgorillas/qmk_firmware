@@ -6,6 +6,8 @@ acrn -> Alphachron
 :agian -> again
 anaylsis -> analysis
 :annd: -> and
+:anmd: -> and
+:amnd: -> and
 augth -> aught
 basleine -> baseline
 bsaeline -> baseline
@@ -19,6 +21,8 @@ beign -> being
 btween -> between
 nigger -> bigger
 :cant' -> can't
+cazn't -> can't
+carribean -> Caribbean
 cuase -> cause
 :chink: -> chunk
 cosnider -> consider
@@ -44,6 +48,7 @@ fukc -> fuck
 fcuk -> fuck
 hgt -> ght
 gonig -> going
+giong -> going
 hjave -> have
 :hve: -> have
 havbe -> have
@@ -51,6 +56,7 @@ havbe -> have
 havent' -> haven't
 havign -> having
 havnig -> having
+husbnad -> husband
 lkike -> like
 terriuble -> terrible
 asiude -> aside
@@ -73,6 +79,7 @@ lkign -> lking
 measn -> means
 mesaurement -> measurement
 nexst -> next
+nmext -> next
 nomral -> normal
 normla -> normal
 :otehr -> other
@@ -83,6 +90,7 @@ shouldnt' -> shouldn't
 someoen -> someone
 someonme -> someone
 soemthing -> something
+sonud -> sound
 specfic -> specific
 stnad -> stand
 thansk -> thanks
@@ -96,6 +104,7 @@ thermocrhon -> thermochron
 thinmg -> thing
 thimng -> thing
 thign -> thing
+thiung -> thing
 thiunk -> think
 thrid -> third
 thjis -> this
@@ -111,11 +120,11 @@ knjee -> knee
 :comptete -> complete
 :esle -> else
 :eyar -> year
- :inot: -> into
+:inot: -> into
 :itis -> it is
- :knwo -> know
- :konw -> know
- :kwno -> know
+:knwo -> know
+:konw -> know
+:kwno -> know
 fromthe -> from the
 isntance -> instance
 instgance -> instance
@@ -133,11 +142,13 @@ instgance -> instance
 :thsi -> this
 thisis -> this is
 :tobe: -> to be
+tohave -> to have
 :tot:he: -> to the
 todya -> today
 tonght -> tonight
 :tyring -> trying
 usiung -> using
+wsant -> want
 :waht: -> what
 whjat -> what
 :whta: -> what
