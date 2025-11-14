@@ -31,3 +31,6 @@
 [submodule "modules/ohshitgorillas/spongemock"]
 	path = modules/ohshitgorillas/spongemock
 	url = https://github.com/ohshitgorillas/qmk-spongemock.git
+[submodule "modules/tzarc"]
+	path = modules/tzarc
+	url = https://github.com/tzarc/qmk_modules.git
