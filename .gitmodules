@@ -25,3 +25,9 @@
 	path = lib/lvgl
 	url = https://github.com/qmk/lvgl.git
 	branch = release/v8.2
+[submodule "modules/ohshitgorillas/xcase"]
+	path = modules/ohshitgorillas/xcase
+	url = https://github.com/ohshitgorillas/qmk-xcase
+[submodule "modules/ohshitgorillas/spongemock"]
+	path = modules/ohshitgorillas/spongemock
+	url = https://github.com/ohshitgorillas/qmk-spongemock.git
