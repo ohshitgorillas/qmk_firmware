@@ -169,11 +169,11 @@ uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) {
 
 // set badkeys
 void set_badkeys(void) {
-  enable_badkeys();
-  add_badkey_by_position(3, 0);  // ctrl
-  add_badkey_by_position(3, 1);  // opt
-  add_badkey_by_position(3, 2);  // cmd
-  add_badkey_by_position(3, 5);  // right cmd
+    enable_badkeys();
+    add_badkey_by_position(3, 0);  // ctrl
+    add_badkey_by_position(3, 1);  // opt
+    add_badkey_by_position(3, 2);  // cmd
+    add_badkey_by_position(3, 5);  // right cmd
 }
 
 
