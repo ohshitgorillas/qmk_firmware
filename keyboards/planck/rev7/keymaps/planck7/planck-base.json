@@ -1,0 +1,96 @@
+[
+  [
+    {
+      "a": 7
+    },
+    "Esc",
+    "Q",
+    "W",
+    "E",
+    "R",
+    "T",
+    "Y",
+    "U",
+    "I",
+    "O",
+    "P",
+    {
+      "a": 5
+    },
+    "~\n`"
+  ],
+  [
+    {
+      "a": 7
+    },
+    "Tab",
+    {
+      "a": 5
+    },
+    "Ctrl\nA\n\n\n\n\n—",
+    "Opt\nS\n\n\n\n\n—",
+    "Cmd\nD\n\n\n\n\n—",
+    "Shift\nF\n\n\n\n\n—",
+    {
+      "a": 7
+    },
+    "G",
+    "H",
+    {
+      "a": 5
+    },
+    "Shift\nJ\n\n\n\n\n—",
+    "Cmd\nK\n\n\n\n\n—",
+    "Opt\nL\n\n\n\n\n—",
+    "Ctrl\n:  ;\n\n\n\n\n—",
+    "\"\n'"
+  ],
+  [
+    {
+      "a": 7
+    },
+    "Shift",
+    "Z",
+    "X",
+    "C",
+    "V",
+    "B",
+    "N",
+    "M",
+    {
+      "a": 5
+    },
+    "<\n,",
+    ">\n.",
+    "?\n/",
+    "Shift\nEnter\n\n\n\n\n—"
+  ],
+  [
+    {
+      "a": 7
+    },
+    "Ctrl",
+    {
+      "a": 5
+    },
+    "Opt\nAlt\n\n\n\n\n-",
+    "Cmd\nWin\n\n\n\n\n-",
+    {
+      "a": 7
+    },
+    "Lower",
+    "Bksp",
+    "Del",
+    {
+      "w": 2
+    },
+    "",
+    "Raise",
+    "Fn",
+    "Lead",
+    {
+      "a": 5
+    },
+    "Cmd\nCtrl\n\n\n\n\n-"
+  ]
+]

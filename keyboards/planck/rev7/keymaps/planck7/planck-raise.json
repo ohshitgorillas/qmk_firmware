@@ -1,0 +1,103 @@
+[
+  [
+    {
+      "a": 7
+    },
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "PgUp",
+    "Home",
+    "↑",
+    "End",
+    {
+      "a": 5
+    },
+    "Print\n\n\n\n\n\nScrn",
+    {
+      "a": 7
+    },
+    "|"
+  ],
+  [
+    "",
+    {
+      "a": 5
+    },
+    "OS\n\n\n\n\n\nLCtrl",
+    "OS\nLAlt\n\n\n\n\nLOpt",
+    "OS\nLWin\n\n\n\n\nLCmd",
+    "OS\n\n\n\n\n\nLShift",
+    {
+      "a": 7
+    },
+    "",
+    "PgDn",
+    "←",
+    "↓",
+    "→",
+    {
+      "a": 5
+    },
+    "Em-\n\n\n\n\n\nDash",
+    "En-\n\n\n\n\n\nDash"
+  ],
+  [
+    {
+      "a": 7
+    },
+    "",
+    {
+      "a": 5
+    },
+    "Com-\n\n\n\n\n\npose",
+    "Toggle\n\n\n\n\n\nMute",
+    {
+      "a": 7
+    },
+    "Vol-",
+    "Vol+",
+    {
+      "a": 5
+    },
+    "Cmd+\n3\n\n\n\n\nShift+",
+    "Cmd+\n4\n\n\n\n\nShift+",
+    "Cmd+\n5\n\n\n\n\nShift+",
+    "Cmd\n[\n\n\n\n\n|Ctrl+",
+    "Cmd\n]\n\n\n\n\n|Ctrl+",
+    {
+      "a": 7
+    },
+    "",
+    ""
+  ],
+  [
+    "",
+    "",
+    "",
+    {
+      "a": 5
+    },
+    "Open\n6\n\n\n\n\nLayer",
+    "Delete\nword\n\n\n\n\nprev",
+    "Delete\nword\n\n\n\n\nnext",
+    {
+      "a": 7,
+      "w": 2
+    },
+    "",
+    {
+      "c": "#e03636"
+    },
+    "",
+    {
+      "c": "#cccccc"
+    },
+    "",
+    "",
+    ""
+  ]
+]
