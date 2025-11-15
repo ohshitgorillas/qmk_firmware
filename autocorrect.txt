@@ -13,7 +13,6 @@ anaylsis -> analysis
 :asthe -> as the
 asiude -> aside
 :atthe -> at the
-augth -> aught
 basleine -> baseline
 bsaeline -> baseline
 baselein -> baseline
@@ -22,25 +21,23 @@ baiscally -> basically
 bsaically -> basically
 :eb: -> be
 befroe -> before
-begnning -> beginning
-beign -> being
+begn -> begin
 btween -> between
 nigger -> bigger
 :cna: -> can
-:cant' -> can't
 cazn't -> can't
 cuase -> cause
+certian -> certain
+hceap -> cheap
 :chink: -> chunk
 :clera -> clear
 :comptete -> complete
 cosnider -> consider
 cosntant -> constant
-couldnt' -> couldn't
+cnut -> cunt
 idsaster -> disaster
-doesnt' -> doesn't
-doiesn't -> doesn't
+doies -> does
 odesn't -> doesn't
-:dont' -> don't
 :eigth -> eight
 eitehr -> either
 iether -> either
@@ -54,6 +51,8 @@ exatcly -> exactly
 exmaple -> example
 :efel -> feel
 figth -> fight
+:ifnd: -> find
+finmd -> find
 :fo:rme: -> for me
 forfgot -> forgot
 forgfot -> forgot
@@ -64,15 +63,13 @@ frienbd -> friend
 fromthe -> from the
 fukc -> fuck
 fcuk -> fuck
-hgt -> ght
+hgt: -> ght
 gonig -> going
 giong -> going
 hjave -> have
 :hve: -> have
 havbe -> have
 :ahve -> have
-havent' -> haven't
-havign -> having
 havnig -> having
 hedaphones -> headphones
 headpohnes -> headphones
@@ -84,6 +81,9 @@ husbnad -> husband
 :inm: -> in
 :int:he: -> in the
 :i:nthe -> in the
+ign: -> ing
+iung: -> ing
+inmg: -> ing
 isntance -> instance
 instgance -> instance
 inmto -> into
@@ -91,6 +91,7 @@ inmto -> into
 :itis -> it is
 jsut -> just
 keyborad -> keyboard
+kjeys -> keys
 knjee -> knee
 :knwo -> know
 :konw -> know
@@ -100,32 +101,36 @@ lkike -> like
 :kike: -> like
 :liek: -> like
 luike -> like
-lkign -> lking
 :amde -> made
 :amke: -> make
 :maek -> make
+:mkae -> make
 :amking -> making
 measn -> means
-mesaurement -> measurement
+mesaure -> measure
 myuch -> much
+nt': -> n't
 nexst -> next
 nmext -> next
 nomral -> normal
 normla -> normal
 :nto: -> not
+oen: -> one
+onme: -> one
 oprder -> order
 :otehr -> other
+ohter -> other
 :erally -> really
 reqiure -> require
 rigth -> right
 :serously -> seriously
-shouldnt' -> shouldn't
-someoen -> someone
+:ste: -> set
 someonme -> someone
 soemthing -> something
 sonud -> sound
 specfic -> specific
 stnad -> stand
+stadn -> stand
 :atp: -> tap
 terriuble -> terrible
 thansk -> thanks
@@ -138,7 +143,6 @@ thjen -> then
 thermocrhon -> thermochron
 thinmg -> thing
 thimng -> thing
-thign -> thing
 thiung -> thing
 htink -> think
 thiunk -> think
@@ -146,16 +150,25 @@ thrid -> third
 thjis -> this
 :thius -> this
 :thsi -> this
+:thios: -> this
 thisis -> this is
+tiem -> time
+toin: -> tion
+tiuon: -> tion
 :tobe: -> to be
 tohave -> to have
 :tot:he: -> to the
 todya -> today
 toigether -> together
 tonght -> tonight
+toinght -> tonight
 :tyring -> trying
+ugth: -> ught
+:uo: -> up
 usiung -> using
-wsant -> want
+:wsant -> want
+:wnat -> want
+wanst -> wants
 :waht: -> what
 whjat -> what
 :whta: -> what
@@ -165,7 +178,7 @@ hwich -> which
 :iwth -> with
 witht:he -> with the
 wit:hthe -> with the
-:wont' -> won't
+withoupt -> without
 wokr -> work
-wouldnt' -> wouldn't
+wrok -> work
 :eyar -> year
