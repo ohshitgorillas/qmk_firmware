@@ -1,0 +1,22 @@
+{
+    "module_name": "badkeys",
+    "maintainer": "ohshitgorillas",
+    "license": "MIT",
+    "features": {
+        "process_record": true
+    },
+    "keycodes": [
+        {
+            "key": "BADKEY_TOGGLE",
+            "aliases": ["BK_TOGG"]
+        },
+        {
+            "key": "BADKEY_ENABLE",
+            "aliases": ["BK_ON"]
+        },
+        {
+            "key": "BADKEY_DISABLE",
+            "aliases": ["BK_OFF"]
+        }
+    ]
+}
