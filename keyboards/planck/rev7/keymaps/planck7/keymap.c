@@ -46,10 +46,10 @@ void leader_end_user(void) {
     // WhatsApp
     tap_code16(LALT(KC_F23));
   }
-  else if (leader_sequence_one_key(KC_E)) {
-    // FB Messenger
-    tap_code16(LCTL(KC_F23));
-  }
+//   else if (leader_sequence_one_key(KC_E)) {
+//     // FB Messenger
+//     tap_code16(LCTL(KC_F23));
+//   }
   else if (leader_sequence_one_key(KC_T)) {
     // Microsoft Teams
     tap_code16(LSFT(KC_F23));
@@ -191,7 +191,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_ESC,  KC_Q,         KC_W,         KC_E,         KC_R,         KC_T,   KC_Y,   KC_U,         KC_I,         KC_O,         KC_P,            KC_GRAVE,
         KC_TAB,  LCTL_T(KC_A), LALT_T(KC_S), LWIN_T(KC_D), LSFT_T(KC_F), KC_G,   KC_H,   RSFT_T(KC_J), RWIN_T(KC_K), RALT_T(KC_L), RCTL_T(KC_SCLN), KC_QUOT,
         KC_LSFT, KC_Z,         KC_X,         KC_C,         KC_V,         KC_B,   KC_N,   KC_M,         KC_COMM,      KC_DOT,       KC_SLSH,         SC_SENT,
-        KC_LCTL, KC_LWIN,      KC_LALT,      MO(2),        KC_BSPC,      KC_DEL, KC_SPC,               MO(4),        MO(5),        QK_LEAD,         KC_RCTL
+        KC_LCTL, KC_LALT,      KC_LWIN,      MO(2),        KC_BSPC,      KC_DEL, KC_SPC,               MO(4),        MO(5),        QK_LEAD,         KC_RCTL
     ),
 
     [2] = LAYOUT_planck_1x2uR(
@@ -208,7 +208,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
           - layer 6: lighting and misc
         */
         _______, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,       XXXXXXX,      KC_PGUP,   KC_HOME,   KC_UP,         KC_END,        KC_PSCR,      LSFT(KC_BSLS),
-        KC_CAPS, OS_LCTL, OS_LALT, OS_LGUI, OS_LSFT,       XXXXXXX,      KC_PGDN,   KC_LEFT,   KC_DOWN,       KC_RGHT,       LSA(KC_MINS), XXXXXXX,
+        XXXXXXX, OS_LCTL, OS_LALT, OS_LGUI, OS_LSFT,       XXXXXXX,      KC_PGDN,   KC_LEFT,   KC_DOWN,       KC_RGHT,       LSA(KC_MINS), LOPT(KC_MINS),
         _______, KC_NUBS, KC_MUTE, KC_VOLD, KC_VOLU,       LSG(KC_3),    LSG(KC_4), LSG(KC_5), LCMD(KC_LBRC), LCMD(KC_RBRC), XXXXXXX,      _______,
         _______, _______, _______, MO(6),   LOPT(KC_BSPC), LOPT(KC_DEL), _______,              _______,       _______,       _______,      _______
     ),
@@ -219,7 +219,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
           - layer 6: lighting and misc
         */
         _______, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,       XXXXXXX,      KC_PGUP, KC_HOME, KC_UP,         KC_END,        KC_PSCR, LSFT(KC_BSLS),
-        KC_CAPS, OS_LCTL, OS_LALT, OS_LGUI, OS_LSFT,       XXXXXXX,      KC_PGDN, KC_LEFT, KC_DOWN,       KC_RGHT,       XXXXXXX, XXXXXXX,
+        XXXXXXX, OS_LCTL, OS_LALT, OS_LGUI, OS_LSFT,       XXXXXXX,      KC_PGDN, KC_LEFT, KC_DOWN,       KC_RGHT,       XXXXXXX, XXXXXXX,
         _______, XXXXXXX, KC_MUTE, KC_VOLD, KC_VOLU,       XXXXXXX,      XXXXXXX, XXXXXXX, LCTL(KC_LBRC), LCTL(KC_RBRC), XXXXXXX, _______,
         _______, _______, _______, MO(6),   LCTL(KC_BSPC), LCTL(KC_DEL), _______,          _______,       _______,       _______, _______
     ),
