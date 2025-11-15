@@ -28,6 +28,9 @@ static uint8_t bad_position_count = 0;
 // Default sound - a simple beep
 static float bad_sound[][2] = SONG(TERMINAL_SOUND);
 
+// Track number of bad keys currently pressed
+static uint8_t bad_keys_pressed = 0;
+
 
 // Public functions
 void enable_badkeys(void) {
@@ -129,25 +132,45 @@ bool process_record_badkeys(uint16_t keycode, keyrecord_t *record) {
         return true;
     }
 
-    // Only process on key down
-    if (record->event.pressed) {
-        // Check if keycode is in bad list
-        for (uint8_t i = 0; i < bad_keycode_count; i++) {
-            if (bad_keycodes[i] == keycode) {
-                PLAY_SONG(bad_sound);
-                return true; // Let the key through but sound was played
-            }
-        }
+    bool is_bad_key = false;
 
-        // Check if position is in bad list
+    // Check if keycode is in bad list
+    for (uint8_t i = 0; i < bad_keycode_count; i++) {
+        if (bad_keycodes[i] == keycode) {
+            is_bad_key = true;
+            break;
+        }
+    }
+
+    // Check if position is in bad list (if not already identified as bad)
+    if (!is_bad_key) {
         for (uint8_t i = 0; i < bad_position_count; i++) {
             if (bad_positions[i].row == record->event.key.row &&
                 bad_positions[i].col == record->event.key.col) {
-                PLAY_SONG(bad_sound);
-                return true; // Let the key through but sound was played
+                is_bad_key = true;
+                break;
             }
         }
     }
 
-    return true; // Pass through all other keys
+    // Handle bad key press/release
+    if (is_bad_key) {
+        if (record->event.pressed) {
+            // Key down - start tone if this is the first bad key
+            if (bad_keys_pressed == 0) {
+                PLAY_LOOP(bad_sound);
+            }
+            bad_keys_pressed++;
+        } else {
+            // Key up - stop tone if no bad keys remain pressed
+            if (bad_keys_pressed > 0) {
+                bad_keys_pressed--;
+                if (bad_keys_pressed == 0) {
+                    stop_all_notes();
+                }
+            }
+        }
+    }
+
+    return true; // Pass through all keys
 }
