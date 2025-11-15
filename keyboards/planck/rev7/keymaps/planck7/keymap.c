@@ -167,6 +167,16 @@ uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) {
 }
 
 
+// set badkeys
+void set_badkeys(void) {
+  enable_badkeys();
+  add_badkey_by_position(3, 0);  // ctrl
+  add_badkey_by_position(3, 1);  // opt
+  add_badkey_by_position(3, 2);  // cmd
+  add_badkey_by_position(3, 5);  // right cmd
+}
+
+
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [0] = LAYOUT_planck_1x2uR(
         /* macOS main layer
@@ -241,6 +251,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
 };
 
+// post init user function to run set badkeys function
+void keyboard_post_init_user(void) {
+    set_badkeys();
+}
 
 // OS Awareness
 bool process_detected_host_os_user(os_variant_t detected_os) {
