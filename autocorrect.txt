@@ -48,7 +48,10 @@ eamil -> email
 enoguh -> enough
 :ect: -> etc
 exatcly -> exactly
+exaclty -> exactly
+exacgtly -> exactly
 exmaple -> example
+examole -> example
 :efel -> feel
 figth -> fight
 :ifnd: -> find
@@ -74,6 +77,7 @@ havnig -> having
 hedaphones -> headphones
 headpohnes -> headphones
 headhpones -> headphones
+hlep -> help
 :ehr -> her
 hwoever -> however
 howveer -> however
@@ -86,6 +90,7 @@ iung: -> ing
 inmg: -> ing
 isntance -> instance
 instgance -> instance
+intead -> instead
 inmto -> into
 :inot: -> into
 :itis -> it is
@@ -125,6 +130,8 @@ reqiure -> require
 rigth -> right
 :serously -> seriously
 :ste: -> set
+shfit -> shift
+shuold -> should
 someonme -> someone
 soemthing -> something
 sonud -> sound
@@ -136,14 +143,17 @@ terriuble -> terrible
 thansk -> thanks
 :taht -> that
 :thta: -> that
+:thyat: -> that
 thge -> the
 :hte: -> the
 :teh: -> the
+:thier -> their
 thjen -> then
 thermocrhon -> thermochron
 thinmg -> thing
 thimng -> thing
 thiung -> thing
+:thng -> thing
 htink -> think
 thiunk -> think
 thrid -> third
@@ -158,10 +168,12 @@ tiuon: -> tion
 :tobe: -> to be
 tohave -> to have
 :tot:he: -> to the
+tot:his -> to this
 todya -> today
 toigether -> together
 tonght -> tonight
 toinght -> tonight
+:trian: -> train
 :tyring -> trying
 ugth: -> ught
 :uo: -> up
