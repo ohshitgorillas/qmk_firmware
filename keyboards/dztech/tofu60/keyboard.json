@@ -70,7 +70,7 @@
                 { "label": "}", "matrix": [1, 12], "x": 12.5, "y": 1 },
                 { "label": "|", "matrix": [1, 13], "x": 13.5, "y": 1, "w": 1.5 },
 
-                { "label": "Caps Lock", "matrix": [2, 0], "x": 0, "y": 2, "w": 1.75 },
+                { "label": "Caps Lock", "matrix": [2, 0], "x": 0, "y": 2, "w": 1.75, "hand": "*" },
                 { "label": "A", "matrix": [2, 1], "x": 1.75, "y": 2 },
                 { "label": "S", "matrix": [2, 2], "x": 2.75, "y": 2 },
                 { "label": "D", "matrix": [2, 3], "x": 3.75, "y": 2 },
@@ -416,7 +416,7 @@
                 { "label": "}", "matrix": [1, 12], "x": 12.5, "y": 1 },
                 { "label": "|", "matrix": [1, 13], "x": 13.5, "y": 1, "w": 1.5 },
 
-                { "label": "Caps Lock", "matrix": [2, 0], "x": 0, "y": 2, "w": 1.75 },
+                { "label": "Caps Lock", "matrix": [2, 0], "x": 0, "y": 2, "w": 1.75, "hand": "*" },
                 { "label": "A", "matrix": [2, 1], "x": 1.75, "y": 2 },
                 { "label": "S", "matrix": [2, 2], "x": 2.75, "y": 2 },
                 { "label": "D", "matrix": [2, 3], "x": 3.75, "y": 2 },
@@ -698,7 +698,7 @@
                 { "label": "}", "matrix": [1, 12], "x": 12.5, "y": 1 },
                 { "label": "|", "matrix": [1, 13], "x": 13.5, "y": 1, "w": 1.5 },
 
-                { "label": "Caps Lock", "matrix": [2, 0], "x": 0, "y": 2, "w": 1.75 },
+                { "label": "Caps Lock", "matrix": [2, 0], "x": 0, "y": 2, "w": 1.75, "hand": "*" },
                 { "label": "A", "matrix": [2, 1], "x": 1.75, "y": 2 },
                 { "label": "S", "matrix": [2, 2], "x": 2.75, "y": 2 },
                 { "label": "D", "matrix": [2, 3], "x": 3.75, "y": 2 },
