@@ -1,6 +1,7 @@
 uthhe -> (U-Th)/He
 acrn -> Alphachron
 carribean -> Caribbean
+activbate -> activate
 :atcually -> actually
 :agian -> again
 anaylsis -> analysis
@@ -22,6 +23,7 @@ bsaically -> basically
 :eb: -> be
 befroe -> before
 begn -> begin
+bteter -> better
 btween -> between
 nigger -> bigger
 :cna: -> can
@@ -34,6 +36,7 @@ hceap -> cheap
 :comptete -> complete
 cosnider -> consider
 cosntant -> constant
+cotnains -> contains
 cnut -> cunt
 idsaster -> disaster
 doies -> does
@@ -120,6 +123,7 @@ nmext -> next
 nomral -> normal
 normla -> normal
 :nto: -> not
+:ont:hat -> on that
 oen: -> one
 onme: -> one
 oprder -> order
@@ -162,6 +166,7 @@ thjis -> this
 :thsi -> this
 :thios: -> this
 thisis -> this is
+:htose -> those
 tiem -> time
 toin: -> tion
 tiuon: -> tion
@@ -185,6 +190,8 @@ wanst -> wants
 whjat -> what
 :whta: -> what
 whenver -> whenever
+whetehr -> whether
+wehther -> whether
 hwich -> which
 :wiht -> with
 :iwth -> with
