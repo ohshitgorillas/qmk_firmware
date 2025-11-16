@@ -1,3 +1,4 @@
+
 uthhe -> (U-Th)/He
 acrn -> Alphachron
 carribean -> Caribbean
@@ -5,12 +6,15 @@ activbate -> activate
 :atcually -> actually
 :agian -> again
 anaylsis -> analysis
+analyhsis -> analysis
 :annd: -> and
 :anmd: -> and
 :amnd: -> and
 :andone -> and one
 :andteh -> and the
 :andthe -> and the
+aynway -> anyway
+anywya -> anyway
 :asthe -> as the
 asiude -> aside
 :atthe -> at the
@@ -21,19 +25,21 @@ bascially -> basically
 baiscally -> basically
 bsaically -> basically
 :eb: -> be
+becasue -> because
 befroe -> before
 begn -> begin
 bteter -> better
 btween -> between
 nigger -> bigger
 :cna: -> can
+:canm: -> can
 cazn't -> can't
 cuase -> cause
 certian -> certain
 hceap -> cheap
 :chink: -> chunk
 :clera -> clear
-:comptete -> complete
+cofnig -> config
 cosnider -> consider
 cosntant -> constant
 cotnains -> contains
@@ -48,6 +54,8 @@ iether -> either
 :esle -> else
 :eles -> else
 eamil -> email
+engiune -> engine
+enmgine -> engine
 enoguh -> enough
 :ect: -> etc
 exatcly -> exactly
@@ -62,6 +70,7 @@ finmd -> find
 :fo:rme: -> for me
 forfgot -> forgot
 forgfot -> forgot
+fortuant -> fortunat
 fourty -> forty
 ferquently -> frequently
 freind -> friend
@@ -88,7 +97,6 @@ husbnad -> husband
 :inm: -> in
 :int:he: -> in the
 :i:nthe -> in the
-ign: -> ing
 iung: -> ing
 inmg: -> ing
 isntance -> instance
@@ -99,6 +107,7 @@ inmto -> into
 :itis -> it is
 jsut -> just
 keyborad -> keyboard
+keybard -> keyboard
 kjeys -> keys
 knjee -> knee
 :knwo -> know
@@ -109,6 +118,7 @@ lkike -> like
 :kike: -> like
 :liek: -> like
 luike -> like
+loasd -> loads
 :amde -> made
 :amke: -> make
 :maek -> make
@@ -117,18 +127,24 @@ luike -> like
 measn -> means
 mesaure -> measure
 myuch -> much
+muych -> much
 nt': -> n't
+natly: -> nately
 nexst -> next
 nmext -> next
 nomral -> normal
 normla -> normal
 :nto: -> not
+:nmot: -> not
 :ont:hat -> on that
 oen: -> one
 onme: -> one
 oprder -> order
 :otehr -> other
 ohter -> other
+proejct -> project
+projkect -> project
+pythoin -> python
 :erally -> really
 reqiure -> require
 rigth -> right
@@ -136,6 +152,7 @@ rigth -> right
 :ste: -> set
 shfit -> shift
 shuold -> should
+simpel -> simple
 someonme -> someone
 soemthing -> something
 sonud -> sound
@@ -148,6 +165,7 @@ thansk -> thanks
 :taht -> that
 :thta: -> that
 :thyat: -> that
+:tghat: -> that
 thge -> the
 :hte: -> the
 :teh: -> the
@@ -160,6 +178,7 @@ thiung -> thing
 :thng -> thing
 htink -> think
 thiunk -> think
+tghink -> think
 thrid -> third
 thjis -> this
 :thius -> this
@@ -171,6 +190,8 @@ tiem -> time
 toin: -> tion
 tiuon: -> tion
 :tobe: -> to be
+:tod:o: -> to do
+:t:odo: -> to do
 tohave -> to have
 :tot:he: -> to the
 tot:his -> to this
@@ -179,6 +200,7 @@ toigether -> together
 tonght -> tonight
 toinght -> tonight
 :trian: -> train
+:tirp: -> trip
 :tyring -> trying
 ugth: -> ught
 :uo: -> up
@@ -193,6 +215,7 @@ whenver -> whenever
 whetehr -> whether
 wehther -> whether
 hwich -> which
+widht -> width
 :wiht -> with
 :iwth -> with
 witht:he -> with the
