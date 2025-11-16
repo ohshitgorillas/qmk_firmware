@@ -3,7 +3,7 @@
 #    include "keymap.h"
 #endif
 
-#include <stdlib.h>
+
 #include "secrets.h"
 
 
@@ -98,6 +98,11 @@ void leader_end_user(void) {
   // sPoNgEmock Mode shorTCUT
   else if (leader_sequence_two_keys(KC_S, KC_M)) {
     toggle_spongemock();
+  }
+
+  // autocorrect toggle
+  else if (leader_sequence_two_keys(KC_A, KC_C)) {
+    tap_code16(AC_TOGG);
   }
 
   // xcase static modes
@@ -265,7 +270,3 @@ bool process_detected_host_os_user(os_variant_t detected_os) {
     }
     return true;
 }
-
-// #ifdef OTHER_KEYMAP_C
-// #    include OTHER_KEYMAP_C
-// #endif // OTHER_KEYMAP_C
