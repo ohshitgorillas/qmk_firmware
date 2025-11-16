@@ -1,4 +1,4 @@
-# ohshitgorillas' Drop x OLKB Planck rev7 layout
+# ohshitgorillas' Drop x OLKB Planck rev7 Layout
 
 ## Physical Configuration
 A green Planck rev7 keyboard from Drop using:
