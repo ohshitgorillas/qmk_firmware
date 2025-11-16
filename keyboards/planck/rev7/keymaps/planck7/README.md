@@ -10,10 +10,25 @@ A green Planck rev7 keyboard from Drop using:
 ## Base Layer
 ![Planck Base Layout](planck-base.png)
 
+**Legend**: A short dash '-' indicates OS-specific differences (see [OS Awareness](#os-awareness)). A long em-dash '—' indicates tap-hold keys where the top legend is hold and bottom is tap.
+
 The base layer uses an OS-aware standard QWERTY layout with Home Row Mods (HRMs), with the 2U spacebar shifted to the right to account for the fact that I hit space with my right thumb exclusively.
 
+### Thumb Backspace and Delete
+This is arguably the most transformative feature of the Planck layout. The transition from a traditional staggered keyboard to ortholinear is notoriously challenging—filled with typos, missed keys, and general frustration as muscle memory adapts to the new grid layout. Having dedicated backspace and delete keys accessible via the right thumb transforms this experience into something relatively manageable.
 
-**Legend**: A short dash '-' indicates OS-specific differences (see [OS Awareness](#os-awareness)). A long em-dash '—' indicates tap-hold keys where the top legend is hold and bottom is tap.
+The ergonomic advantage cannot be overstated: instead of reaching up to the top-right corner with your pinky (often requiring hand repositioning), error correction becomes a simple thumb tap. This keeps your hands in the home position and maintains typing flow.
+
+Beyond basic error correction, these thumb keys offer enhanced functionality when combined with the Raise layer. Holding Raise while pressing backspace or delete escalates the operation to word-level deletion—backspace becomes "delete previous word" and delete becomes "delete next word". This provides efficient text editing capabilities without leaving the home row or requiring complex key combinations.
+
+
+### Auto-Correction
+I use the QMK Autocorrect feature heavily with a custom library that I fill out as I make typos. This can be found at [autocorrect.txt](../../../../../autocorrect.txt). 
+
+While there are several libraries out there for this kind of thing, most of them are focused on misspellings. I know how to spell, I just want to have my keyboard autocorrect *typos*.
+
+In the future, the autocorrect.txt file will be split into several files and concatenated before generating `autocorrect_data.h`. 
+
 
 ### Tap-Hold Keys: Home Row Mods (HRMs) and Shift/Enter (SENT)
 This layout uses two tap-hold configurations:
@@ -22,7 +37,7 @@ This layout uses two tap-hold configurations:
 
 HRMs and SENT require conflicting timing configurations. HRMs need conservative timing to avoid misfires during fast typing, while SENT needs aggressive timing to reliably activate Shift when holding other keys.
 
-The core issue is that Shift as a HRM is problematic: unlike other modifiers (Ctrl, Cmd, Alt), Shift is frequently used mid-typing flow at high speeds. This makes HRM Shift prone to misfires that require extensive timing tuning to distinguish between intended Shift holds and letter taps.
+The core issue is that Shift as a HRM is problematic: unlike other modifiers (Ctrl, Cmd, Alt), Shift is frequently used mid-typing flow at high speeds. This makes HRM Shift prone to misfires that require extensive timing tuning to distinguish intent.
 
 I prefer "dedicated" Shift keys to avoid this complexity—specifically a dedicated left Shift and SENT for the right side.
 
@@ -116,3 +131,8 @@ This layer also contains access to the following features:
 ![Planck Function Layout](planck-function.png) 
 
 The Function Key layer enables access to F keys, alongside one-shot modifiers. F keys are arranged in rows of four, with F5 under the home-row J key.
+
+## Lighting Layer
+The keymap also contains a final layer for controlling the lighting effects on the Planck along the home row. This is accessed by first holding Raise, then Lower. Chording Lower then Raise would simply result in outputting `0` due to the numpad layer placement.
+
+I personally don't care for keyboard lighting, so I am content to keep the lights off.
