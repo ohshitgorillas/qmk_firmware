@@ -55,22 +55,22 @@
       "w": 1.75
     },
     "Caps Lock\nFn\n\n\n\n\n—",
+    "A\nCtrl\n\n\n\n\n—",
+    "S\nOpt\n\n\n\n\n—",
+    "D\nCmd\n\n\n\n\n—",
+    "F\nShift\n\n\n\n\n—",
     {
       "a": 7
     },
-    "A",
-    "S",
-    "D",
-    "F",
     "G",
     "H",
-    "J",
-    "K",
-    "L",
     {
       "a": 5
     },
-    ":\n;",
+    "J\nShift\n\n\n\n\n—",
+    "K\nCmd\n\n\n\n\n—",
+    "L\nOpt\n\n\n\n\n—",
+    ": ;\nCtrl\n\n\n\n\n—",
     "\"\n'",
     {
       "a": 7,
@@ -108,21 +108,27 @@
       "w": 1.5
     },
     "Ctrl",
-    "Opt",
+    {
+      "a": 5
+    },
+    "Opt\nWin\n\n\n\n\n-",
     {
       "w": 1.5
     },
-    "Cmd",
+    "Cmd\nAlt\n\n\n\n\n-",
     {
+      "a": 7,
       "w": 7
     },
     "",
     {
+      "a": 5,
       "w": 1.5
     },
-    "Cmd",
-    "Opt",
+    "Cmd\nAlt\n\n\n\n\n-",
+    "Opt\nWin\n\n\n\n\n-",
     {
+      "a": 7,
       "w": 1.5
     },
     "Ctrl"
