@@ -46,10 +46,6 @@ void leader_end_user(void) {
     // WhatsApp
     tap_code16(LALT(KC_F23));
   }
-//   else if (leader_sequence_one_key(KC_E)) {
-//     // FB Messenger
-//     tap_code16(LCTL(KC_F23));
-//   }
   else if (leader_sequence_one_key(KC_T)) {
     // Microsoft Teams
     tap_code16(LSFT(KC_F23));
