@@ -85,6 +85,10 @@ The following leader sequences activate xcase, which replaces spaces with a give
 ### SpongeMock Mode
 The keyboard contains a QMK module called SpongeMock, which randOMlY CaPitaliZEs leTtERs to MimiC tHE sPONGEBob MOckING mEme. This is accessed via the Leader sequence S, M.
 
+### Autocorrect Mode
+The keyboard contains a custom autocorrect dictionary and autocorrect mode that can be toggled via the leader sequence A, C.
+
+
 ## Lower: Numbers and Symbols
 ![Planck Lower Layout](planck-lower.png)
 
