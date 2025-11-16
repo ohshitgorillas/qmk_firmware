@@ -1,3 +1,10 @@
+# include these files
+!keyboards/planck/rev7/keymaps/planck7/*.png
+!keyboards/dztech/tofu60/keymaps/default/*.png
+
+# secrets
+secrets.h
+
 # Junk files
 *.bak
 *.swp
