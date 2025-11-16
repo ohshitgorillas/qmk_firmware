@@ -3,12 +3,12 @@
 // caps word
 #define DOUBLE_TAP_SHIFT_TURNS_ON_CAPS_WORD
 
-// tapping terms
+// tap-hold
 #define FLOW_TAP_TERM 150
 #define CHORDAL_HOLD
 #define HOLD_ON_OTHER_KEY_PRESS_PER_KEY
 #define TAPPING_TERM_PER_KEY
-// #define TAP_HOLD_CAPS_DELAY TAP_CODE_DELAY
+#define TAP_HOLD_CAPS_DELAY 200
 
 // leader
 #define LEADER_TIMEOUT 350
