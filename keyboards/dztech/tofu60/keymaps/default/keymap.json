@@ -1,0 +1,6 @@
+{
+    "modules": [
+        "ohshitgorillas/xcase",
+        "ohshitgorillas/spongemock"
+    ]
+}
