@@ -21,42 +21,8 @@ extern uint16_t leader_sequence[];
 
 
 void leader_end_user(void) {
-    // Personal info macros
-    if (leader_sequence_three_keys(KC_P, KC_E, KC_M)) { SEND_STRING(PERSONAL_EMAIL); }
-    else if (leader_sequence_three_keys(KC_W, KC_E, KC_M)) { SEND_STRING(WORK_EMAIL); }
-    else if (leader_sequence_three_keys(KC_P, KC_P, KC_H)) { SEND_STRING(PERSONAL_PHONE); }
-    else if (leader_sequence_three_keys(KC_W, KC_P, KC_H)) { SEND_STRING(WORK_PHONE); }
-    else if (leader_sequence_four_keys(KC_A, KC_D, KC_D, KC_R)) { SEND_STRING(PERSONAL_ADDRESS); }
-    else if (leader_sequence_three_keys(KC_O, KC_S, KC_G)) { SEND_STRING(PERSONAL_DOMAIN); }
-
-    // Go-to app shortcuts (single key)
-    else if (leader_sequence[0] != KC_NO && leader_sequence[1] == KC_NO) {
-        switch (leader_sequence[0]) {
-            case KC_Q: tap_code16(LCG(KC_F23)); break;   // WeChat
-            case KC_W: tap_code16(LALT(KC_F23)); break;  // WhatsApp
-            case KC_T: tap_code16(LSFT(KC_F23)); break;  // Teams
-            case KC_A: tap_code16(LCS(KC_F23)); break;   // Safari (Android msgs)
-            case KC_S: tap_code16(LGUI(KC_F23)); break;  // Signal
-            case KC_D: tap_code16(LCA(KC_F23)); break;   // Discord
-            case KC_F: tap_code(KC_F22); break;          // Finder
-            case KC_Z: tap_code16(LGUI(KC_F24)); break;  // Outlook
-            case KC_X: tap_code16(LSFT(KC_F24)); break;  // Terminal
-            case KC_C: tap_code16(LCTL(KC_F24)); break;  // Cursor
-            case KC_B: tap_code(KC_F14); break;          // Browser
-            case KC_N: tap_code(KC_F15); break;          // Calculator
-            case KC_M: tap_code(KC_F16); break;          // Music
-        }
-    }
-
-    // Two-key sequences
-    else if (leader_sequence_two_keys(KC_S, KC_M)) { toggle_spongemock(); }
-    else if (leader_sequence_two_keys(KC_A, KC_C)) { tap_code16(QK_AUTOCORRECT_TOGGLE); }
-    else if (leader_sequence_two_keys(KC_S, KC_C)) { tap_code16(XCASE_SNAKE); }
-    else if (leader_sequence_two_keys(KC_K, KC_C)) { tap_code16(XCASE_KEBAB); }
-    else if (leader_sequence_two_keys(KC_C, KC_C)) { tap_code16(XCASE_CAMEL); }
-
     // xcase dynamic delimiters
-    else if (leader_sequence[0] == KC_X && leader_sequence[1] == KC_C) {
+    if (leader_sequence[0] == KC_X && leader_sequence[1] == KC_C) {
         uint16_t delimiter = leader_sequence[2];
         switch (delimiter) {
             case KC_LSFT:
@@ -70,6 +36,36 @@ void leader_end_user(void) {
         }
         enable_xcase_with(delimiter);
     }
+
+    // Personal info macros
+    else if (leader_sequence_four_keys(KC_A, KC_D, KC_D, KC_R)) { SEND_STRING(PERSONAL_ADDRESS); }
+    else if (leader_sequence_three_keys(KC_P, KC_E, KC_M)) { SEND_STRING(PERSONAL_EMAIL); }
+    else if (leader_sequence_three_keys(KC_W, KC_E, KC_M)) { SEND_STRING(WORK_EMAIL); }
+    else if (leader_sequence_three_keys(KC_P, KC_P, KC_H)) { SEND_STRING(PERSONAL_PHONE); }
+    else if (leader_sequence_three_keys(KC_W, KC_P, KC_H)) { SEND_STRING(WORK_PHONE); }
+    else if (leader_sequence_three_keys(KC_O, KC_S, KC_G)) { SEND_STRING(PERSONAL_DOMAIN); }
+
+    // Go-to app shortcuts (single key)
+    else if (leader_sequence_one_key(KC_Q)) { tap_code16(LCG(KC_F23)); }   // WeChat
+    else if (leader_sequence_one_key(KC_W)) { tap_code16(LALT(KC_F23)); }  // WhatsApp
+    else if (leader_sequence_one_key(KC_T)) { tap_code16(LSFT(KC_F23)); }  // Teams
+    else if (leader_sequence_one_key(KC_A)) { tap_code16(LCS(KC_F23)); }   // Safari (Android msgs)
+    else if (leader_sequence_one_key(KC_S)) { tap_code16(LGUI(KC_F23)); }  // Signal
+    else if (leader_sequence_one_key(KC_D)) { tap_code16(LCA(KC_F23)); }   // Discord
+    else if (leader_sequence_one_key(KC_F)) { tap_code(KC_F22); }          // Finder
+    else if (leader_sequence_one_key(KC_Z)) { tap_code16(LGUI(KC_F24)); }  // Outlook
+    else if (leader_sequence_one_key(KC_X)) { tap_code16(LSFT(KC_F24)); }  // Terminal
+    else if (leader_sequence_one_key(KC_C)) { tap_code16(LCTL(KC_F24)); }  // Cursor
+    else if (leader_sequence_one_key(KC_B)) { tap_code(KC_F14); }          // Browser
+    else if (leader_sequence_one_key(KC_N)) { tap_code(KC_F15); }          // Calculator
+    else if (leader_sequence_one_key(KC_M)) { tap_code(KC_F16); }          // Music
+
+    // Two-key sequences
+    else if (leader_sequence_two_keys(KC_S, KC_M)) { toggle_spongemock(); }
+    else if (leader_sequence_two_keys(KC_A, KC_C)) { tap_code16(QK_AUTOCORRECT_TOGGLE); }
+    else if (leader_sequence_two_keys(KC_S, KC_C)) { tap_code16(XCASE_SNAKE); }
+    else if (leader_sequence_two_keys(KC_K, KC_C)) { tap_code16(XCASE_KEBAB); }
+    else if (leader_sequence_two_keys(KC_C, KC_C)) { tap_code16(XCASE_CAMEL); }
 }
 
 
@@ -141,7 +137,6 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
 };
 
-
 // OS Awareness
 bool process_detected_host_os_user(os_variant_t detected_os) {
     if (detected_os == OS_MACOS || detected_os == OS_IOS) {
@@ -151,3 +146,4 @@ bool process_detected_host_os_user(os_variant_t detected_os) {
     }
     return true;
 }
+
