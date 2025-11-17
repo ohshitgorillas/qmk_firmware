@@ -12,11 +12,11 @@ This repository takes a different approach by focusing primarily on **typo corre
 
 To maximize reusability and allow selective adoption, the corrections are organized into five distinct categories:
 
-- **[general.txt](general.txt)**: Core typo corrections covering the most common mechanical errors—transposed letters, missing letters, and other finger fumbles. This is the foundation file that most users will want.
+- **[typos.txt](typos.txt)**: Core typo corrections covering the most common mechanical errors—transposed letters, missing letters, and other finger fumbles. This is the foundation file that most users will want.
 
 - **[misspellings.txt](misspellings.txt)**: A curated list of words that I personally misspell from time to time.
 
-- **[personal.txt](personal.txt)**: Science-specific terms, technical jargon, proper nouns, and phrases that I use frequently.
+- **[personal.txt](personal.txt)**: Science-specific terms, technical jargon, proper nouns, and phrases that I use frequently but that most others won't recognize.
 
 - **[profanity.txt](profanity.txt)**: Common typos of profane words, corrected to their intended forms. Separated for those who prefer to exclude such corrections from their setup.
 

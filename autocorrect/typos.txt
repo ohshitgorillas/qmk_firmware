@@ -1,4 +1,6 @@
 # general typos
+
+:iv'e: -> I've
 activbate -> activate
 :atcually -> actually
 :agian -> again
@@ -38,6 +40,7 @@ cofnig -> config
 cosnider -> consider
 cosntant -> constant
 cotnain -> contain
+correcdt -> correct
 idsaster -> disaster
 doies -> does
 odesn't -> doesn't
@@ -69,6 +72,7 @@ ferquently -> frequently
 freind -> friend
 frienbd -> friend
 fromthe -> from the
+gneeral -> general
 hgt: -> ght
 gonig -> going
 giong -> going
@@ -109,8 +113,10 @@ knjee -> knee
 :konw -> know
 :kwno -> know
 :lsat: -> last
+libarry -> library
 :liek: -> like
 luike -> like
+:lik:ea: -> like a
 loasd -> loads
 :amde -> made
 :amke: -> make
@@ -136,9 +142,11 @@ onme: -> one
 oprder -> order
 :otehr -> other
 ohter -> other
+outt:here -> out there
 proejct -> project
 projkect -> project
 pythoin -> python
+quikc -> quick
 :erally -> really
 reqiure -> require
 rigth -> right
@@ -156,6 +164,7 @@ specfic -> specific
 stnad -> stand
 stadn -> stand
 :atp: -> tap
+tersm -> terms
 terriuble -> terrible
 thansk -> thanks
 :taht -> that
@@ -167,6 +176,7 @@ thge -> the
 :teh: -> the
 :thier: -> their
 thjen -> then
+thsee -> these
 thinmg -> thing
 thimng -> thing
 thiung -> thing
@@ -218,8 +228,8 @@ witgh -> with
 witht:he -> with the
 wit:hthe -> with the
 withoupt -> without
+worsd -> words
 :wrok: -> work
 :eyar -> year
 :yopur: -> your
-:iv'e: -> I've
-thsee -> these
+:yuor: -> your
