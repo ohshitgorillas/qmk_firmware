@@ -27,10 +27,8 @@ void leader_end_user(void) {
         switch (delimiter) {
             case KC_LSFT:
             case KC_RSFT:
-
             case OS_LSFT:
             case OS_RSFT:
-            case SC_SENT:
                 delimiter = LSFT(leader_sequence[3]);  // Use shifted fourth key
                 break;
         }
@@ -62,10 +60,10 @@ void leader_end_user(void) {
 
     // Two-key sequences
     else if (leader_sequence_two_keys(KC_S, KC_M)) { toggle_spongemock(); }
-    else if (leader_sequence_two_keys(KC_A, KC_C)) { tap_code16(QK_AUTOCORRECT_TOGGLE); }
-    else if (leader_sequence_two_keys(KC_S, KC_C)) { tap_code16(XCASE_SNAKE); }
-    else if (leader_sequence_two_keys(KC_K, KC_C)) { tap_code16(XCASE_KEBAB); }
-    else if (leader_sequence_two_keys(KC_C, KC_C)) { tap_code16(XCASE_CAMEL); }
+    else if (leader_sequence_two_keys(KC_A, KC_C)) { autocorrect_toggle(); }
+    else if (leader_sequence_two_keys(KC_S, KC_C)) { enable_xcase_with(KC_UNDS); }
+    else if (leader_sequence_two_keys(KC_K, KC_C)) { enable_xcase_with(KC_MINS); }
+    else if (leader_sequence_two_keys(KC_C, KC_C)) { enable_xcase_with(KC_LSFT); }
 }
 
 
@@ -84,9 +82,20 @@ uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) {
     switch (keycode) {
         case LT(2,KC_CAPS):
         case LT(3,KC_CAPS):
-            return 80;
+            return 50;
         default:
-            return 300;
+            return 200;
+    }
+}
+
+
+bool get_retro_tapping(uint16_t keycode, keyrecord_t *record) {
+    switch (keycode) {
+        case LT(2,KC_CAPS):
+        case LT(3,KC_CAPS):
+            return true;
+        default:
+            return false;
     }
 }
 
@@ -130,10 +139,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         _______,  QK_LEAD, KC_MUTE, KC_VOLD, KC_VOLU, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,   XXXXXXX,              _______, XXXXXXX,
         _______,  _______, _______,                                     _______,                                _______,   _______, _______
     ),
-    
+
     [4] = LAYOUT_60_ansi_tsangan_split_bs_rshift(
         // universal navigation layer (HHKB style w/ slight modifications)
-        XXXXXXX,   KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,   KC_F7,   KC_F8,   KC_F9,    KC_F10,   KC_F11,    KC_F12,  KC_INS,  KC_DEL,
+        XXXXXXX,   KC_F1,  KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,   KC_F7,   KC_F8,   KC_F9,    KC_F10,    KC_F11,    KC_F12,  KC_INS,  KC_DEL,
         QK_LEAD,  XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_PSCR, KC_SCRL,  KC_PAUS,   KC_UP,     XXXXXXX, _______,
         XXXXXXX,  OS_LCTL, OS_LALT, OS_LGUI, OS_LSFT, XXXXXXX, KC_ASTR, KC_SLSH, KC_HOME, KC_PGUP,  KC_LEFT,   KC_RIGHT,           _______,
         _______,  XXXXXXX, KC_MUTE, KC_VOLD, KC_VOLU, XXXXXXX, KC_PLUS, KC_MINS, KC_END,  KC_PGDN,  KC_DOWN,              _______, XXXXXXX,
