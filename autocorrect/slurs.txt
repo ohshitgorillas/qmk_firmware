@@ -1,18 +1,20 @@
-# QWERTY letter swaps or missing letters
+# slurs: letter swaps or extra/missing letters
 :beaner: -> beamer
 :nigger: -> bigger
 :gook: -> book
 :chink: -> chunk
 :fag: -> flag
 :kike: -> like
+:lkike: -> like
 :mick: -> Nick
 wetback -> setback
 :spic: -> spicy
 
-# you should know better
+# slurs: you should know better
 :coon: -> raccoon
 faggot -> homosexual
 :paki: -> Pakistani
 :tranny -> trans
 transsexual -> transgender
 eskimo -> Inuit
+
