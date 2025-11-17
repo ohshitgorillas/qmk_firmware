@@ -25,7 +25,6 @@ static uint8_t bad_keycode_count = 0;
 static matrix_pos_t bad_positions[MAX_BAD_POSITIONS];
 static uint8_t bad_position_count = 0;
 
-// Default sound - a simple beep
 static float bad_sound[][2] = SONG(TERMINAL_SOUND);
 
 // Track number of bad keys currently pressed
@@ -40,11 +39,32 @@ void enable_badkeys(void) {
 
 void disable_badkeys(void) {
     badkeys_active = false;
+    bad_keys_pressed = 0;
 }
 
 
 bool is_badkeys_active(void) {
     return badkeys_active;
+}
+
+
+bool is_badkey_by_keycode(uint16_t keycode) {
+    for (uint8_t i = 0; i < bad_keycode_count; i++) {
+        if (bad_keycodes[i] == keycode) {
+            return true;
+        }
+    }
+    return false;
+}
+
+
+bool is_badkey_by_position(uint8_t row, uint8_t col) {
+    for (uint8_t i = 0; i < bad_position_count; i++) {
+        if (bad_positions[i].row == row && bad_positions[i].col == col) {
+            return true;
+        }
+    }
+    return false;
 }
 
 
@@ -54,20 +74,18 @@ void add_badkey_by_keycode(uint16_t keycode) {
     }
 
     // Check if already exists
-    for (uint8_t i = 0; i < bad_keycode_count; i++) {
-        if (bad_keycodes[i] == keycode) {
-            return; // Already in list
-        }
+    if (is_badkey_by_keycode(keycode)) {
+        return; // Already in list
     }
 
-    bad_keycodes[bad_keycode_count++] = keycode;
+    bad_keycodes[bad_keycode_count] = keycode;
+    bad_keycode_count++;
 }
 
 
 void remove_badkey_by_keycode(uint16_t keycode) {
     for (uint8_t i = 0; i < bad_keycode_count; i++) {
         if (bad_keycodes[i] == keycode) {
-            // Shift remaining elements down
             for (uint8_t j = i; j < bad_keycode_count - 1; j++) {
                 bad_keycodes[j] = bad_keycodes[j + 1];
             }
@@ -84,10 +102,8 @@ void add_badkey_by_position(uint8_t row, uint8_t col) {
     }
 
     // Check if already exists
-    for (uint8_t i = 0; i < bad_position_count; i++) {
-        if (bad_positions[i].row == row && bad_positions[i].col == col) {
-            return; // Already in list
-        }
+    if (is_badkey_by_position(row, col)) {
+        return; // Already in list
     }
 
     bad_positions[bad_position_count].row = row;
@@ -99,7 +115,6 @@ void add_badkey_by_position(uint8_t row, uint8_t col) {
 void remove_badkey_by_position(uint8_t row, uint8_t col) {
     for (uint8_t i = 0; i < bad_position_count; i++) {
         if (bad_positions[i].row == row && bad_positions[i].col == col) {
-            // Shift remaining elements down
             for (uint8_t j = i; j < bad_position_count - 1; j++) {
                 bad_positions[j] = bad_positions[j + 1];
             }
@@ -110,7 +125,7 @@ void remove_badkey_by_position(uint8_t row, uint8_t col) {
 }
 
 
-// Main processing function
+// main function
 bool process_record_badkeys(uint16_t keycode, keyrecord_t *record) {
     // Handle toggle/enable/disable keycodes first
     if (record->event.pressed) {
@@ -132,29 +147,11 @@ bool process_record_badkeys(uint16_t keycode, keyrecord_t *record) {
         return true;
     }
 
-    bool is_bad_key = false;
-
     // Check if keycode is in bad list
-    for (uint8_t i = 0; i < bad_keycode_count; i++) {
-        if (bad_keycodes[i] == keycode) {
-            is_bad_key = true;
-            break;
-        }
-    }
-
-    // Check if position is in bad list (if not already identified as bad)
-    if (!is_bad_key) {
-        for (uint8_t i = 0; i < bad_position_count; i++) {
-            if (bad_positions[i].row == record->event.key.row &&
-                bad_positions[i].col == record->event.key.col) {
-                is_bad_key = true;
-                break;
-            }
-        }
-    }
-
-    // Handle bad key press/release
-    if (is_bad_key) {
+    if (
+        is_badkey_by_keycode(keycode) ||
+        is_badkey_by_position(record->event.key.row, record->event.key.col)
+    ) {
         if (record->event.pressed) {
             // Key down - start tone if this is the first bad key
             if (bad_keys_pressed == 0) {
@@ -171,6 +168,5 @@ bool process_record_badkeys(uint16_t keycode, keyrecord_t *record) {
             }
         }
     }
-
     return true; // Pass through all keys
 }
