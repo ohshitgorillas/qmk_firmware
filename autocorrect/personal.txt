@@ -1,0 +1,4 @@
+# most people probably won't get much use out of these
+uthhe -> (U-Th)/He
+:acrn: -> Alphachron
+thermocrhon -> thermochron
