@@ -21,118 +21,54 @@ extern uint16_t leader_sequence[];
 
 
 void leader_end_user(void) {
-  // personal info macros
-  if (leader_sequence_three_keys(KC_P, KC_E, KC_M)) {
-      // personal email
-      SEND_STRING(PERSONAL_EMAIL);
-  }
-  else if (leader_sequence_three_keys(KC_W, KC_E, KC_M)) {
-      // work email
-      SEND_STRING(WORK_EMAIL);
-  }
-  else if (leader_sequence_three_keys(KC_P, KC_P, KC_H)) {
-      // personal phone number
-      SEND_STRING(PERSONAL_PHONE);
-  }
-  else if (leader_sequence_three_keys(KC_W, KC_P, KC_H)) {
-      // work phone number
-      SEND_STRING(WORK_PHONE);
-  }
-  else if (leader_sequence_four_keys(KC_A, KC_D, KC_D, KC_R)) {
-      // personal address
-      SEND_STRING(PERSONAL_ADDRESS);
-  }
-  else if (leader_sequence_three_keys(KC_O, KC_S, KC_G)) {
-      // personal use domain
-      SEND_STRING(PERSONAL_DOMAIN);
-  }
+    // Personal info macros
+    if (leader_sequence_three_keys(KC_P, KC_E, KC_M)) { SEND_STRING(PERSONAL_EMAIL); }
+    else if (leader_sequence_three_keys(KC_W, KC_E, KC_M)) { SEND_STRING(WORK_EMAIL); }
+    else if (leader_sequence_three_keys(KC_P, KC_P, KC_H)) { SEND_STRING(PERSONAL_PHONE); }
+    else if (leader_sequence_three_keys(KC_W, KC_P, KC_H)) { SEND_STRING(WORK_PHONE); }
+    else if (leader_sequence_four_keys(KC_A, KC_D, KC_D, KC_R)) { SEND_STRING(PERSONAL_ADDRESS); }
+    else if (leader_sequence_three_keys(KC_O, KC_S, KC_G)) { SEND_STRING(PERSONAL_DOMAIN); }
 
-  // go to app shortcuts
-  else if (leader_sequence_one_key(KC_Q)) {
-    // WeChat
-    tap_code16(LCG(KC_F23));
-  }
-  else if (leader_sequence_one_key(KC_W)) {
-    // WhatsApp
-    tap_code16(LALT(KC_F23));
-  }
-  else if (leader_sequence_one_key(KC_T)) {
-    // Microsoft Teams
-    tap_code16(LSFT(KC_F23));
-  }
-  else if (leader_sequence_one_key(KC_A)) {
-    // Safari (Android messaging webapp)
-    tap_code16(LCS(KC_F23));
-  }
-  else if (leader_sequence_one_key(KC_S)) {
-    // Signal
-    tap_code16(LGUI(KC_F23));
-  }
-  else if (leader_sequence_one_key(KC_D)) {
-    // Discord
-    tap_code16(LCA(KC_F23));
-  }
-  else if (leader_sequence_one_key(KC_F)) {
-    // Finder
-    tap_code(KC_F22);
-  }
-  else if (leader_sequence_one_key(KC_Z)) {
-    // Outlook
-    tap_code16(LGUI(KC_F24));
-  }
-  else if (leader_sequence_one_key(KC_X)) {
-    // Terminal
-    tap_code16(LSFT(KC_F24));
-  }
-  else if (leader_sequence_one_key(KC_C)) {
-    // Cursor
-    tap_code16(LCTL(KC_F24));
-  }
-  else if (leader_sequence_one_key(KC_B)) {
-    // Browser
-    tap_code(KC_F14);
-  }
-  else if (leader_sequence_one_key(KC_N)) {
-    // Calculator
-    tap_code(KC_F15);
-  }
-  else if (leader_sequence_one_key(KC_M)) {
-    // Music
-    tap_code(KC_F16);
-  }
+    // Go-to app shortcuts (single key)
+    else if (leader_sequence[0] != KC_NO && leader_sequence[1] == KC_NO) {
+        switch (leader_sequence[0]) {
+            case KC_Q: tap_code16(LCG(KC_F23)); break;   // WeChat
+            case KC_W: tap_code16(LALT(KC_F23)); break;  // WhatsApp
+            case KC_T: tap_code16(LSFT(KC_F23)); break;  // Teams
+            case KC_A: tap_code16(LCS(KC_F23)); break;   // Safari (Android msgs)
+            case KC_S: tap_code16(LGUI(KC_F23)); break;  // Signal
+            case KC_D: tap_code16(LCA(KC_F23)); break;   // Discord
+            case KC_F: tap_code(KC_F22); break;          // Finder
+            case KC_Z: tap_code16(LGUI(KC_F24)); break;  // Outlook
+            case KC_X: tap_code16(LSFT(KC_F24)); break;  // Terminal
+            case KC_C: tap_code16(LCTL(KC_F24)); break;  // Cursor
+            case KC_B: tap_code(KC_F14); break;          // Browser
+            case KC_N: tap_code(KC_F15); break;          // Calculator
+            case KC_M: tap_code(KC_F16); break;          // Music
+        }
+    }
 
-  // sPoNgEmock Mode shorTCUT
-  else if (leader_sequence_two_keys(KC_S, KC_M)) {
-    toggle_spongemock();
-  }
+    // Two-key sequences
+    else if (leader_sequence_two_keys(KC_S, KC_M)) { toggle_spongemock(); }
+    else if (leader_sequence_two_keys(KC_A, KC_C)) { tap_code16(QK_AUTOCORRECT_TOGGLE); }
+    else if (leader_sequence_two_keys(KC_S, KC_C)) { tap_code16(XCASE_SNAKE); }
+    else if (leader_sequence_two_keys(KC_K, KC_C)) { tap_code16(XCASE_KEBAB); }
+    else if (leader_sequence_two_keys(KC_C, KC_C)) { tap_code16(XCASE_CAMEL); }
 
-  // xcase static modes
-  else if (leader_sequence_two_keys(KC_S, KC_C)) {
-    enable_xcase_with(KC_UNDS);  // snake_case
-  }
-  else if (leader_sequence_two_keys(KC_K, KC_C)) {
-    enable_xcase_with(KC_MINS);  // kebab-case
-  }
-  else if (leader_sequence_two_keys(KC_C, KC_C)) {
-    enable_xcase_with(OS_LSFT);  // camelCase
-  }
-  // dynamic delimiters
-  else if (
-    leader_sequence[0] == KC_X &&
-    leader_sequence[1] == KC_C) {
+    // xcase dynamic delimiters
+    else if (leader_sequence[0] == KC_X && leader_sequence[1] == KC_C) {
+        uint16_t delimiter = leader_sequence[2];
+        switch (delimiter) {
+            case KC_LSFT:
+            case KC_RSFT:
 
-        // Get the third key (the dynamic delimiter)
-        uint16_t third_key = leader_sequence[2];
-        switch (third_key) {
-            case KC_LSFT:  // if shift is the third key,
-            case KC_RSFT:  // use the shifted fourth key as the delimiter
             case OS_LSFT:
             case OS_RSFT:
             case SC_SENT:
-                third_key = LSFT(leader_sequence[3]);  // the shifted fourth key is the intended third key
+                delimiter = LSFT(leader_sequence[3]);  // Use shifted fourth key
                 break;
         }
-        enable_xcase_with(third_key);  // use the third key as the delimiter
+        enable_xcase_with(delimiter);
     }
 }
 
