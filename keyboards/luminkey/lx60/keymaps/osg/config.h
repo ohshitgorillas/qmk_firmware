@@ -1,0 +1,15 @@
+#pragma once
+
+// caps word
+#define DOUBLE_TAP_SHIFT_TURNS_ON_CAPS_WORD
+
+// tap-hold
+#define CHORDAL_HOLD
+#define FLOW_TAP_TERM 150
+#define HOLD_ON_OTHER_KEY_PRESS_PER_KEY
+#define TAP_HOLD_CAPS_DELAY 200
+#define TAPPING_TERM_PER_KEY
+
+// leader
+#define LEADER_NO_TIMEOUT
+#define LEADER_TIMEOUT 350
