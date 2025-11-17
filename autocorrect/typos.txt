@@ -1,5 +1,4 @@
 # typos: missing/transposed/extra letters etc.
-
 :iv'e: -> I've
 activbate -> activate
 :atcually -> actually

@@ -1,234 +1,12 @@
-# general typos
-activbate -> activate
-:atcually -> actually
-:agian -> again
-anaylsis -> analysis
-analyhsis -> analysis
-:annd: -> and
-:anmd: -> and
-:amnd: -> and
-:andone -> and one
-:andteh -> and the
-:andthe -> and the
-aynway -> anyway
-anywya -> anyway
-:asthe: -> as the
-asiude -> aside
-:atthe -> at the
-basleine -> baseline
-bsaeline -> baseline
-baselein -> baseline
-bascially -> basically
-baiscally -> basically
-bsaically -> basically
-becasue -> because
-befroe -> before
-begn: -> begin
-bteter -> better
-btween -> between
-:cna: -> can
-:canm: -> can
-cazn't -> can't
-:capos -> caps
-cuase -> cause
-:certian -> certain
-hceap -> cheap
-:clera -> clear
-cofnig -> config
-cosnider -> consider
-cosntant -> constant
-cotnain -> contain
-idsaster -> disaster
-doies -> does
-odesn't -> doesn't
-:eigth -> eight
-eitehr -> either
-iether -> either
-:eiter -> either
-:esle -> else
-:eles -> else
-:eamil: -> email
-engiune -> engine
-enmgine -> engine
-enoguh -> enough
-:ect: -> etc
-exatcly -> exactly
-exaclty -> exactly
-exacgtly -> exactly
-exmaple -> example
-examole -> example
-:efel -> feel
-figth -> fight
-:ifnd: -> find
-finmd -> find
-:fo:rme: -> for me
-forfgot -> forgot
-forgfot -> forgot
-fortuant -> fortunat
-ferquently -> frequently
-freind -> friend
-frienbd -> friend
-fromthe -> from the
-hgt: -> ght
-gonig -> going
-giong -> going
-:ahs: -> has
-hjave -> have
-:hve: -> have
-havbe -> have
-:ahve -> have
-havnig -> having
-hedaphones -> headphones
-headpohnes -> headphones
-headhpones -> headphones
-hlep -> help
-:ehr: -> her
-hwoever -> however
-howveer -> however
-husbnad -> husband
-identiucal -> identical
-:inm: -> in
-:int:he: -> in the
-:i:nthe -> in the
-iung: -> ing
-inmg: -> ing
-isntall -> install
-isntance -> instance
-instgance -> instance
-intead -> instead
-inmto -> into
-:inot: -> into
-:itis -> it is
-:jsut: -> just
-keyborad -> keyboard
-keybard -> keyboard
-keyboarsd -> keyboards
-kjeys -> keys
-knjee -> knee
-:knwo -> know
-:konw -> know
-:kwno -> know
-:lsat: -> last
-:liek: -> like
-luike -> like
-loasd -> loads
-:amde -> made
-:amke: -> make
-:maek -> make
-:mkae -> make
-:amking -> making
-measn -> means
-mesaure -> measure
-myuch -> much
-muych -> much
-nt': -> n't
-natly: -> nately
-nexst -> next
-nmext -> next
-nomral -> normal
-normla -> normal
-:nto: -> not
-:nmot: -> not
-:ofg: -> of
-:ont:hat -> on that
-:oen: -> one
-onme: -> one
-oprder -> order
-:otehr -> other
-ohter -> other
-proejct -> project
-projkect -> project
-pythoin -> python
-:erally -> really
-reqiure -> require
-rigth -> right
-:serously -> seriously
-:ste: -> set
-shfit -> shift
-shuold -> should
-simpel -> simple
-someonme -> someone
-soemthing -> something
-sonud -> sound
-spoace -> space
-sapce -> space
-specfic -> specific
-stnad -> stand
-stadn -> stand
-:atp: -> tap
-terriuble -> terrible
-thansk -> thanks
-:taht -> that
-:thta: -> that
-:thyat: -> that
-:tghat: -> that
-thge -> the
-:hte: -> the
-:teh: -> the
-:thier: -> their
-thjen -> then
-thinmg -> thing
-thimng -> thing
-thiung -> thing
-:thng -> thing
-htink -> think
-thiunk -> think
-tghink -> think
-:thrid: -> third
-thjis -> this
-:thius -> this
-:thsi -> this
-:thios: -> this
-:thisis: -> this is
-:htose -> those
-:tiem: -> time
-toin: -> tion
-tiuon: -> tion
-tiopn: -> tion
-:tobe: -> to be
-:tod:o: -> to do
-:t:odo: -> to do
-tohave -> to have
-:tot:he: -> to the
-tot:his -> to this
-todya -> today
-toigether -> together
-tonght -> tonight
-toinght -> tonight
-:trian: -> train
-:tirp: -> trip
-:tyring -> trying
-ugth: -> ught
-:uo: -> up
-usiung -> using
-:wsant -> want
-:wnat -> want
-wanst -> wants
-:waht: -> what
-whjat -> what
-:whta: -> what
-whenver -> whenever
-whetehr -> whether
-wehther -> whether
-hwich -> which
-widht -> width
-:wiht -> with
-:iwth -> with
-witgh -> with
-witht:he -> with the
-wit:hthe -> with the
-withoupt -> without
-:wrok: -> work
-:eyar -> year
-:yopur: -> your
-:iv'e: -> I've
-
+# things I personally struggle with misspelling
 carribean -> Caribbean
 fourty -> forty
-# most people probably won't get much use out of these
+
+# personal stuff - most people won't get much use out of 
 uthhe -> (U-Th)/He
 :acrn: -> Alphachron
 thermocrhon -> thermochron
+
 # profanity: the best part of English
 bitych -> bitch
 bicht -> bitch
@@ -266,7 +44,7 @@ asshoel -> asshole
 :nigger: -> bigger
 :gook: -> book
 :chink: -> chunk
-:fag: -> flag
+:fag: -> gag
 :kike: -> like
 :lkike: -> like
 :mick: -> Nick
@@ -274,10 +52,269 @@ wetback -> setback
 :spic: -> spicy
 
 # slurs: you should know better
-:coon: -> raccoon
 faggot -> homosexual
+:eskimo: -> Inuit
 :paki: -> Pakistani
+:coon: -> raccoon
 :tranny -> trans
 transsexual -> transgender
-eskimo -> Inuit
 
+# typos: missing/transposed/extra letters etc.
+
+:iv'e: -> I've
+activbate -> activate
+:atcually -> actually
+:agian -> again
+anaylsis -> analysis
+analyhsis -> analysis
+:annd: -> and
+:anmd: -> and
+:amnd: -> and
+:adn: -> and
+:abnd: -> and
+:andone -> and one
+:andteh -> and the
+:andthe -> and the
+anyopne -> anyone
+aynway -> anyway
+anywya -> anyway
+:asthe: -> as the
+asiude -> aside
+:atthe -> at the
+basleine -> baseline
+bsaeline -> baseline
+baselein -> baseline
+bascially -> basically
+baiscally -> basically
+bsaically -> basically
+becasue -> because
+befroe -> before
+:bfore -> before
+begn: -> begin
+bteter -> better
+btween -> between
+:cna: -> can
+:canm: -> can
+cazn't -> can't
+:capos -> caps
+cuase -> cause
+:certian -> certain
+chanp -> champ
+hceap -> cheap
+:clera -> clear
+cofnig -> config
+conquwer -> conquer
+cosnider -> consider
+cosntant -> constant
+constnat -> constant
+cotnain -> contain
+correcdt -> correct
+idsaster -> disaster
+doies -> does
+odesn't -> doesn't
+:eigth -> eight
+eitehr -> either
+iether -> either
+:eiter -> either
+:esle -> else
+:eles -> else
+:eamil: -> email
+engiune -> engine
+enmgine -> engine
+enoguh -> enough
+:ect: -> etc
+exatcly -> exactly
+exaclty -> exactly
+exacgtly -> exactly
+exmaple -> example
+examole -> example
+:efel -> feel
+figth -> fight
+:ifnd: -> find
+finmd -> find
+fingedr -> finger
+forfgot -> forgot
+forgfot -> forgot
+fogrot -> forgot
+fortuant -> fortunat
+ferquently -> frequently
+freind -> friend
+frienbd -> friend
+fromthe -> from the
+gneeral -> general
+hgt: -> ght
+gonig -> going
+giong -> going
+:ahs: -> has
+hjave -> have
+:hve: -> have
+havbe -> have
+:ahve -> have
+havnig -> having
+hedaphones -> headphones
+headpohnes -> headphones
+headhpones -> headphones
+hlep -> help
+:ehr: -> her
+hwoever -> however
+howveer -> however
+husbnad -> husband
+identiucal -> identical
+:inm: -> in
+:int:he: -> in the
+:i:nthe -> in the
+iung: -> ing
+inmg: -> ing
+isntall -> install
+isntance -> instance
+instgance -> instance
+intead -> instead
+isntead -> instead
+isntruct -> instruct
+inmto -> into
+:inot: -> into
+:itis -> it is
+:jsut: -> just
+keyborad -> keyboard
+keybard -> keyboard
+keyboarsd -> keyboards
+kjeys -> keys
+knjee -> knee
+:knwo -> know
+:konw -> know
+:kwno -> know
+:lsat: -> last
+:alyer: -> layer
+layhout -> layout
+libarry -> library
+:liek: -> like
+luike -> like
+:lik:e -> like
+lluy: -> lly
+loasd -> loads
+:amde -> made
+:amke: -> make
+:maek -> make
+:mkae -> make
+:amking -> making
+measn -> means
+mesaure -> measure
+myuch -> much
+muych -> much
+nt': -> n't
+natly: -> nately
+nexst -> next
+nmext -> next
+nomral -> normal
+normla -> normal
+:nto: -> not
+:nmot: -> not
+nlty: -> ntly
+:ofg: -> of
+:fo: -> of
+:onit: -> on it
+:ont:hat -> on that
+:oen: -> one
+onme: -> one
+oprder -> order
+:otehr -> other
+ohter -> other
+outt:here -> out there
+piong: -> ping
+proejct -> project
+projkect -> project
+pythoin -> python
+quikc -> quick
+:erally -> really
+reqiure -> require
+rigth -> right
+sekf: -> self
+:serously -> seriously
+:ste: -> set
+shfit -> shift
+shuold -> should
+simpel -> simple
+someonme -> someone
+soemthing -> something
+sonud -> sound
+spoace -> space
+sapce -> space
+specfic -> specific
+:psicy -> spicy
+stnad -> stand
+stadn -> stand
+sruviv -> surviv
+:atp: -> tap
+:tersm -> terms
+terriuble -> terrible
+thansk -> thanks
+:taht -> that
+:thta: -> that
+:thyat: -> that
+:tghat: -> that
+thge -> the
+:hte: -> the
+:teh: -> the
+:thier: -> their
+thjen -> then
+thsee -> these
+thinmg -> thing
+thimng -> thing
+thiung -> thing
+thign -> thing
+:thng -> thing
+htink -> think
+thiunk -> think
+tghink -> think
+:thrid: -> third
+thjis -> this
+:thius -> this
+:thsi -> this
+:thios: -> this
+:thisis: -> this is
+:htose -> those
+:tiem: -> time
+toin: -> tion
+tiuon: -> tion
+tiopn: -> tion
+:tobe: -> to be
+:tob:oth -> to both
+:tod:o: -> to do
+:t:odo: -> to do
+tohave -> to have
+:tot:he: -> to the
+tot:his -> to this
+todya -> today
+toigether -> together
+tonght -> tonight
+toinght -> tonight
+:trian: -> train
+:tirp: -> trip
+:tyring -> trying
+ugth: -> ught
+unbder -> under
+:uo: -> up
+:wsant -> want
+:wnat -> want
+wanst -> wants
+:waht: -> what
+whjat -> what
+:whta: -> what
+whenver -> whenever
+whetehr -> whether
+wehther -> whether
+hwich -> which
+widht -> width
+wign: -> wing
+:wiht -> with
+:iwth -> with
+witgh -> with
+witht:he -> with the
+wit:hthe -> with the
+withoupt -> without
+worsd -> words
+:wrok: -> work
+:eyar -> year
+:yera: -> year
+:yopur: -> your
+:yuor: -> your
