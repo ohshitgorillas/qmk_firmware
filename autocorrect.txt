@@ -1,6 +1,4 @@
-
-uthhe -> (U-Th)/He
-acrn -> Alphachron
+:acrn: -> Alphachron
 carribean -> Caribbean
 activbate -> activate
 :atcually -> actually
@@ -15,7 +13,7 @@ analyhsis -> analysis
 :andthe -> and the
 aynway -> anyway
 anywya -> anyway
-:asthe -> as the
+:asthe: -> as the
 asiude -> aside
 :atthe -> at the
 basleine -> baseline
@@ -24,26 +22,26 @@ baselein -> baseline
 bascially -> basically
 baiscally -> basically
 bsaically -> basically
-:eb: -> be
 becasue -> because
 befroe -> before
-begn -> begin
+begn: -> begin
 bteter -> better
 btween -> between
-nigger -> bigger
+:nigger: -> bigger
 :cna: -> can
 :canm: -> can
 cazn't -> can't
+:capos -> caps
 cuase -> cause
-certian -> certain
+:certian -> certain
 hceap -> cheap
 :chink: -> chunk
 :clera -> clear
 cofnig -> config
 cosnider -> consider
 cosntant -> constant
-cotnains -> contains
-cnut -> cunt
+cotnain -> contain
+:cnut: -> cunt
 idsaster -> disaster
 doies -> does
 odesn't -> doesn't
@@ -53,7 +51,7 @@ iether -> either
 :eiter -> either
 :esle -> else
 :eles -> else
-eamil -> email
+:eamil: -> email
 engiune -> engine
 enmgine -> engine
 enoguh -> enough
@@ -81,6 +79,7 @@ fcuk -> fuck
 hgt: -> ght
 gonig -> going
 giong -> going
+:ahs: -> has
 hjave -> have
 :hve: -> have
 havbe -> have
@@ -90,22 +89,24 @@ hedaphones -> headphones
 headpohnes -> headphones
 headhpones -> headphones
 hlep -> help
-:ehr -> her
+:ehr: -> her
 hwoever -> however
 howveer -> however
 husbnad -> husband
+identiucal -> identical
 :inm: -> in
 :int:he: -> in the
 :i:nthe -> in the
 iung: -> ing
 inmg: -> ing
+isntall -> install
 isntance -> instance
 instgance -> instance
 intead -> instead
 inmto -> into
 :inot: -> into
 :itis -> it is
-jsut -> just
+:jsut: -> just
 keyborad -> keyboard
 keybard -> keyboard
 kjeys -> keys
@@ -113,7 +114,7 @@ knjee -> knee
 :knwo -> know
 :konw -> know
 :kwno -> know
-lsat -> last
+:lsat: -> last
 lkike -> like
 :kike: -> like
 :liek: -> like
@@ -136,8 +137,9 @@ nomral -> normal
 normla -> normal
 :nto: -> not
 :nmot: -> not
+:ofg: -> of
 :ont:hat -> on that
-oen: -> one
+:oen: -> one
 onme: -> one
 oprder -> order
 :otehr -> other
@@ -156,6 +158,8 @@ simpel -> simple
 someonme -> someone
 soemthing -> something
 sonud -> sound
+spoace -> space
+sapce -> space
 specfic -> specific
 stnad -> stand
 stadn -> stand
@@ -169,7 +173,7 @@ thansk -> thanks
 thge -> the
 :hte: -> the
 :teh: -> the
-:thier -> their
+:thier: -> their
 thjen -> then
 thermocrhon -> thermochron
 thinmg -> thing
@@ -179,16 +183,17 @@ thiung -> thing
 htink -> think
 thiunk -> think
 tghink -> think
-thrid -> third
+:thrid: -> third
 thjis -> this
 :thius -> this
 :thsi -> this
 :thios: -> this
-thisis -> this is
+:thisis: -> this is
 :htose -> those
-tiem -> time
+:tiem: -> time
 toin: -> tion
 tiuon: -> tion
+tiopn: -> tion
 :tobe: -> to be
 :tod:o: -> to do
 :t:odo: -> to do
@@ -218,9 +223,10 @@ hwich -> which
 widht -> width
 :wiht -> with
 :iwth -> with
+witgh -> with
 witht:he -> with the
 wit:hthe -> with the
 withoupt -> without
-wokr -> work
-wrok -> work
+:wrok: -> work
 :eyar -> year
+:yopur: -> your
