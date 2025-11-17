@@ -43,3 +43,6 @@
 [submodule "modules/drashna"]
 	path = modules/drashna
 	url = https://github.com/drashna/qmk_modules.git
+[submodule "modules/dave-thompson"]
+	path = modules/dave-thompson
+	url = https://github.com/dave-thompson/qmk-modules.git
