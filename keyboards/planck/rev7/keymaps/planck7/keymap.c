@@ -11,110 +11,110 @@ extern uint16_t leader_sequence[];
 
 
 void leader_end_user(void) {
-  // personal info macros
-  if (leader_sequence_three_keys(KC_P, KC_E, KC_M)) {
-      // personal email
-      SEND_STRING(PERSONAL_EMAIL);
-  }
-  else if (leader_sequence_three_keys(KC_W, KC_E, KC_M)) {
-      // work email
-      SEND_STRING(WORK_EMAIL);
-  }
-  else if (leader_sequence_three_keys(KC_P, KC_P, KC_H)) {
-      // personal phone number
-      SEND_STRING(PERSONAL_PHONE);
-  }
-  else if (leader_sequence_three_keys(KC_W, KC_P, KC_H)) {
-      // work phone number
-      SEND_STRING(WORK_PHONE);
-  }
-  else if (leader_sequence_four_keys(KC_A, KC_D, KC_D, KC_R)) {
-      // personal address
-      SEND_STRING(PERSONAL_ADDRESS);
-  }
-  else if (leader_sequence_three_keys(KC_O, KC_S, KC_G)) {
-      // personal use domain
-      SEND_STRING(PERSONAL_DOMAIN);
-  }
+    // personal info macros
+    if (leader_sequence_three_keys(KC_P, KC_E, KC_M)) {
+        // personal email
+        SEND_STRING(PERSONAL_EMAIL);
+    }
+    else if (leader_sequence_three_keys(KC_W, KC_E, KC_M)) {
+        // work email
+        SEND_STRING(WORK_EMAIL);
+    }
+    else if (leader_sequence_three_keys(KC_P, KC_P, KC_H)) {
+        // personal phone number
+        SEND_STRING(PERSONAL_PHONE);
+    }
+    else if (leader_sequence_three_keys(KC_W, KC_P, KC_H)) {
+        // work phone number
+        SEND_STRING(WORK_PHONE);
+    }
+    else if (leader_sequence_four_keys(KC_A, KC_D, KC_D, KC_R)) {
+        // personal address
+        SEND_STRING(PERSONAL_ADDRESS);
+    }
+    else if (leader_sequence_three_keys(KC_O, KC_S, KC_G)) {
+        // personal use domain
+        SEND_STRING(PERSONAL_DOMAIN);
+    }
 
-  // go to app shortcuts
-  else if (leader_sequence_one_key(KC_Q)) {
-    // WeChat
-    tap_code16(LCG(KC_F23));
-  }
-  else if (leader_sequence_one_key(KC_W)) {
-    // WhatsApp
-    tap_code16(LALT(KC_F23));
-  }
-  else if (leader_sequence_one_key(KC_T)) {
-    // Microsoft Teams
-    tap_code16(LSFT(KC_F23));
-  }
-  else if (leader_sequence_one_key(KC_A)) {
-    // Safari (Android messaging webapp)
-    tap_code16(LCS(KC_F23));
-  }
-  else if (leader_sequence_one_key(KC_S)) {
-    // Signal
-    tap_code16(LGUI(KC_F23));
-  }
-  else if (leader_sequence_one_key(KC_D)) {
-    // Discord
-    tap_code16(LCA(KC_F23));
-  }
-  else if (leader_sequence_one_key(KC_F)) {
-    // Finder
-    tap_code(KC_F22);
-  }
-  else if (leader_sequence_one_key(KC_Z)) {
-    // Outlook
-    tap_code16(LGUI(KC_F24));
-  }
-  else if (leader_sequence_one_key(KC_X)) {
-    // Terminal
-    tap_code16(LSFT(KC_F24));
-  }
-  else if (leader_sequence_one_key(KC_C)) {
-    // Cursor
-    tap_code16(LCTL(KC_F24));
-  }
-  else if (leader_sequence_one_key(KC_B)) {
-    // Browser
-    tap_code(KC_F14);
-  }
-  else if (leader_sequence_one_key(KC_N)) {
-    // Calculator
-    tap_code(KC_F15);
-  }
-  else if (leader_sequence_one_key(KC_M)) {
-    // Music
-    tap_code(KC_F16);
-  }
+    // go to app shortcuts
+    else if (leader_sequence_one_key(KC_Q)) {
+        // WeChat
+        tap_code16(LCG(KC_F23));
+    }
+    else if (leader_sequence_one_key(KC_W)) {
+        // WhatsApp
+        tap_code16(LALT(KC_F23));
+    }
+    else if (leader_sequence_one_key(KC_T)) {
+        // Microsoft Teams
+        tap_code16(LSFT(KC_F23));
+    }
+    else if (leader_sequence_one_key(KC_A)) {
+        // Safari (Android messaging webapp)
+        tap_code16(LCS(KC_F23));
+    }
+    else if (leader_sequence_one_key(KC_S)) {
+        // Signal
+        tap_code16(LGUI(KC_F23));
+    }
+    else if (leader_sequence_one_key(KC_D)) {
+        // Discord
+        tap_code16(LCA(KC_F23));
+    }
+    else if (leader_sequence_one_key(KC_F)) {
+        // Finder
+        tap_code(KC_F22);
+    }
+    else if (leader_sequence_one_key(KC_Z)) {
+        // Outlook
+        tap_code16(LGUI(KC_F24));
+    }
+    else if (leader_sequence_one_key(KC_X)) {
+        // Terminal
+        tap_code16(LSFT(KC_F24));
+    }
+    else if (leader_sequence_one_key(KC_C)) {
+        // Cursor
+        tap_code16(LCTL(KC_F24));
+    }
+    else if (leader_sequence_one_key(KC_B)) {
+        // Browser
+        tap_code(KC_F14);
+    }
+    else if (leader_sequence_one_key(KC_N)) {
+        // Calculator
+        tap_code(KC_F15);
+    }
+    else if (leader_sequence_one_key(KC_M)) {
+        // Music
+        tap_code(KC_F16);
+    }
 
-  // sPoNgEmock Mode shorTCUT
-  else if (leader_sequence_two_keys(KC_S, KC_M)) {
-    toggle_spongemock();
-  }
+    // sPoNgEmock Mode shorTCUT
+    else if (leader_sequence_two_keys(KC_S, KC_M)) {
+        toggle_spongemock();
+    }
 
-  // autocorrect toggle
-  else if (leader_sequence_two_keys(KC_A, KC_C)) {
-    tap_code16(AC_TOGG);
-  }
+    // autocorrect toggle
+    else if (leader_sequence_two_keys(KC_A, KC_C)) {
+        tap_code16(AC_TOGG);
+    }
 
-  // xcase static modes
-  else if (leader_sequence_two_keys(KC_S, KC_C)) {
-    enable_xcase_with(KC_UNDS);  // snake_case
-  }
-  else if (leader_sequence_two_keys(KC_K, KC_C)) {
-    enable_xcase_with(KC_MINS);  // kebab-case
-  }
-  else if (leader_sequence_two_keys(KC_C, KC_C)) {
-    enable_xcase_with(OS_LSFT);  // camelCase
-  }
-  // dynamic delimiters
-  else if (
-    leader_sequence[0] == KC_X &&
-    leader_sequence[1] == KC_C) {
+    // xcase static modes
+    else if (leader_sequence_two_keys(KC_S, KC_C)) {
+        enable_xcase_with(KC_UNDS);  // snake_case
+    }
+    else if (leader_sequence_two_keys(KC_K, KC_C)) {
+        enable_xcase_with(KC_MINS);  // kebab-case
+    }
+    else if (leader_sequence_two_keys(KC_C, KC_C)) {
+        enable_xcase_with(OS_LSFT);  // camelCase
+    }
+    // dynamic delimiters
+    else if (
+        leader_sequence[0] == KC_X &&
+        leader_sequence[1] == KC_C) {
 
         // Get the third key (the dynamic delimiter)
         uint16_t third_key = leader_sequence[2];
