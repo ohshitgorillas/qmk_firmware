@@ -100,6 +100,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_LSFT,       KC_Z,         KC_X,         KC_C,         KC_V,         KC_B,   KC_N,   KC_M,         KC_COMM,      KC_DOT,       KC_SLSH,                  KC_RSFT, MO(4),
         KC_LCTL,       KC_LOPT,      KC_LCMD,                                                  KC_SPC,                                                    KC_RCMD, KC_ROPT, KC_RCTL
     ),
+
     [1] = LAYOUT_60_ansi_tsangan_split_bs_rshift(
         // Windows/Linux main layer
         KC_ESC,        KC_1,         KC_2,         KC_3,         KC_4,         KC_5,   KC_6,   KC_7,         KC_8,         KC_9,         KC_0,            KC_MINS, KC_EQL,  KC_BSLS, KC_GRAVE,
@@ -108,6 +109,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_LSFT,       KC_Z,         KC_X,         KC_C,         KC_V,         KC_B,   KC_N,   KC_M,         KC_COMM,      KC_DOT,       KC_SLSH,                  KC_RSFT, MO(4),
         KC_LCTL,       KC_LWIN,      KC_LALT,                                                  KC_SPC,                                                    KC_RALT, KC_RWIN, KC_RCTL
     ),
+
     [2] = LAYOUT_60_ansi_tsangan_split_bs_rshift(
         // macOS caps layer
         // notes:
@@ -119,6 +121,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         _______,  QK_LEAD, KC_MUTE, KC_VOLD, KC_VOLU, XXXXXXX, XXXXXXX, XXXXXXX, LSG(KC_3), LSG(KC_4), LSG(KC_5),            _______, XXXXXXX,
         _______,  _______, _______,                                     _______,                                  _______,   _______, _______
     ),
+
      [3] = LAYOUT_60_ansi_tsangan_split_bs_rshift(
         // Windows/Linux caps layer
         XXXXXXX,  KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,   KC_F7,   KC_F8,   KC_F9,     KC_F10,    KC_F11,    KC_F12,  _______, _______,
@@ -127,6 +130,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         _______,  QK_LEAD, KC_MUTE, KC_VOLD, KC_VOLU, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,   XXXXXXX,              _______, XXXXXXX,
         _______,  _______, _______,                                     _______,                                _______,   _______, _______
     ),
+    
     [4] = LAYOUT_60_ansi_tsangan_split_bs_rshift(
         // universal navigation layer (HHKB style w/ slight modifications)
         XXXXXXX,   KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,   KC_F7,   KC_F8,   KC_F9,    KC_F10,   KC_F11,    KC_F12,  KC_INS,  KC_DEL,
