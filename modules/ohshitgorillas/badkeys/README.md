@@ -1,15 +1,16 @@
-# qmk-badkeys: Audio Feedback on Certain Keypresses
+# qmk-badkeys: Audio Feedback on Keypresses
 Does your keyboard make noise? Do you wish it made even more noise? Today is your lucky day!
 
 BadKeys is a QMK community module which allows users to "train" themselves against using certain keys by providing audio feedback from the keyboard's speaker for the duration of certain keypresses.
-
-Obviously, you need a keyboard with a speaker for this to work.
 
 One example of usage is for users with 65% keyboards or larger trying to get used to using layered arrow keys to move down to 60% or smaller keyboards: when the actual arrow keys are pressed, the keyboard will beep to indicate that the user has made a mistake (by not using the layered arrow keys).
 
 Another example is users trying to get used to Home Row Mods: the dedicated modifier keys can beep upon use, indicating that the user should instead be using the HRMs.
 
 ## Usage
+
+Obviously, you need a keyboard with a speaker for this to work.
+
 1.  Ensure you have `AUDIO_ENABLE = yes` in your `rules.mk` file. 
 2.  Add the BadKeys module to your QMK directory.
 
@@ -80,13 +81,13 @@ The following functions are made available to your `keymap.c`.
 ```c
 void enable_badkeys(void);
 ```
-Enables badkeys.
+Enables BadKeys.
 
 ### disable_badkeys
 ```c
 void disable_badkeys(void);
 ```
-Disables badkeys.
+Disables BadKeys.
 
 ### is_badkeys_active
 ```c
@@ -106,6 +107,12 @@ void remove_badkey_by_keycode(uint16_t keycode);
 ```
 Remove a given keycode from BadKeys.
 
+### is_badkey_by_keycode
+```c
+void is_badkey_by_keycode(uint16_t keycode);
+```
+Returns true if the keycode is a badkey.
+
 ### add_badkey_by_position
 ```c
 void add_badkey_by_position(uint8_t row, uint8_t col);
@@ -119,3 +126,9 @@ You may need to refer to the `layouts` section of `keyboard.json` to find the co
 void remove_badkey_by_position(uint8_t row, uint8_t col);
 ```
 Remove a physical key from BadKeys.
+
+### is_badkey_by_position
+```c
+bool is_badkey_by_position(uint8_t row, uint8_t col);
+```
+Returns true if the given physical key position is a badkey.
