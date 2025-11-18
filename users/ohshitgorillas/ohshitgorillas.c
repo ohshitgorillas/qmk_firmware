@@ -1,52 +1,10 @@
 #include "ohshitgorillas.h"
 #include "secrets.h"
-
-// Weak implementations - keyboards can override these
-__attribute__((weak)) bool process_record_keymap(uint16_t keycode, keyrecord_t *record) {
-    return true;
-}
-
-__attribute__((weak)) uint16_t get_tapping_term_keymap(uint16_t keycode, keyrecord_t *record) {
-    return TAPPING_TERM;
-}
-
-__attribute__((weak)) bool get_hold_on_other_key_press_keymap(uint16_t keycode, keyrecord_t *record) {
-    return false;
-}
-
-__attribute__((weak)) bool process_detected_host_os_keymap(os_variant_t detected_os) {
-    return true;
-}
-
-// these keys are needed at high speeds,
-// so we set them to a shorter tapping term
-uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) {
-    switch (keycode) {
-        case LT(2, KC_CAPS):  // Caps Lock layer (60% keyboards)
-        case LT(3, KC_CAPS):  // Caps Lock layer (60% keyboards)
-        case SC_SENT:         // Shift/Enter (Planck)
-            return 80;
-        default:
-            return 300;       // home row mods have a long tap term to prevent misfires
-    }
-}
-
-// if we are pressing another key while holding these keys,
-// we should activate the hold action
-bool get_hold_on_other_key_press_per_key(uint16_t keycode, keyrecord_t *record) {
-    switch (keycode) {
-        case LT(2, KC_CAPS):  // Caps Lock layer (60% keyboards)
-        case LT(3, KC_CAPS):  // Caps Lock layer (60% keyboards)
-        case SC_SENT:         // Shift/Enter (Planck)
-            return true;
-        default:
-            return false;     // home row mods use default behavior to prevent misfires
-    }
-}
-
+#include "xcase.h"
+#include "spongemock.h"
 
 // OS Awareness
-// Always use layer 0 for macOS/iOS, layer 1 for everything else
+// Convention: macOS/iOS uses layer 0, everything else uses layer 1
 bool process_detected_host_os_user(os_variant_t detected_os) {
     if (detected_os == OS_MACOS || detected_os == OS_IOS) {
         set_single_persistent_default_layer(0);
@@ -57,9 +15,7 @@ bool process_detected_host_os_user(os_variant_t detected_os) {
 }
 
 
-// Leader sequences
 extern uint16_t leader_sequence[];
-
 void leader_end_user(void) {
     // xcase dynamic delimiters
     if (leader_sequence[0] == KC_X && leader_sequence[1] == KC_C) {
@@ -69,7 +25,6 @@ void leader_end_user(void) {
             case KC_RSFT:
             case OS_LSFT:
             case OS_RSFT:
-            case SC_SENT:
                 delimiter = LSFT(leader_sequence[3]);  // Use shifted fourth key
                 break;
         }
@@ -99,10 +54,10 @@ void leader_end_user(void) {
     else if (leader_sequence_one_key(KC_N)) { tap_code(KC_F15); }          // Calculator
     else if (leader_sequence_one_key(KC_M)) { tap_code(KC_F16); }          // Music
 
-    // Miscellaneous two-key sequences
+    // Two-key sequences
     else if (leader_sequence_two_keys(KC_S, KC_M)) { toggle_spongemock(); }
-    else if (leader_sequence_two_keys(KC_A, KC_C)) { tap_code16(QK_AUTOCORRECT_TOGGLE); }
-    else if (leader_sequence_two_keys(KC_S, KC_C)) { tap_code16(XCASE_SNAKE); }
-    else if (leader_sequence_two_keys(KC_K, KC_C)) { tap_code16(XCASE_KEBAB); }
-    else if (leader_sequence_two_keys(KC_C, KC_C)) { tap_code16(XCASE_CAMEL); }
+    else if (leader_sequence_two_keys(KC_A, KC_C)) { autocorrect_toggle(); }
+    else if (leader_sequence_two_keys(KC_S, KC_C)) { enable_xcase_with(KC_UNDS); }
+    else if (leader_sequence_two_keys(KC_K, KC_C)) { enable_xcase_with(KC_MINS); }
+    else if (leader_sequence_two_keys(KC_C, KC_C)) { enable_xcase_with(KC_LSFT); }
 }

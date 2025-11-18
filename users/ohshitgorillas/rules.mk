@@ -1,4 +1,1 @@
-CAPS_WORD_ENABLE = yes
-OS_DETECTION_ENABLE = yes
-AUTOCORRECT_ENABLE = yes
-LEADER_ENABLE = yes
+SRC += ohshitgorillas.c
