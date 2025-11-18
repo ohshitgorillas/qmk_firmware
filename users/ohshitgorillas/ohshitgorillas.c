@@ -4,7 +4,7 @@
 #include "spongemock.h"
 
 // OS Awareness
-// Convention: macOS/iOS uses layer 0, everything else uses layer 1
+// macOS/iOS uses layer 0, everything else uses layer 1
 bool process_detected_host_os_user(os_variant_t detected_os) {
     if (detected_os == OS_MACOS || detected_os == OS_IOS) {
         set_single_persistent_default_layer(0);
@@ -15,6 +15,7 @@ bool process_detected_host_os_user(os_variant_t detected_os) {
 }
 
 
+// Leader sequences
 extern uint16_t leader_sequence[];
 void leader_end_user(void) {
     // xcase dynamic delimiters
@@ -60,4 +61,43 @@ void leader_end_user(void) {
     else if (leader_sequence_two_keys(KC_S, KC_C)) { enable_xcase_with(KC_UNDS); }
     else if (leader_sequence_two_keys(KC_K, KC_C)) { enable_xcase_with(KC_MINS); }
     else if (leader_sequence_two_keys(KC_C, KC_C)) { enable_xcase_with(KC_LSFT); }
+}
+
+
+// Timing functions
+bool get_hold_on_other_key_press_per_key(uint16_t keycode, keyrecord_t *record) {
+    switch (keycode) {
+        case LT(2, KC_CAPS):  // 60s
+        case LT(3, KC_CAPS):  // 60s
+        case SC_SENT:         // Planck
+            return true;
+        default:              // Home Row Mods
+            return false;
+    }
+}
+
+
+
+uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) {
+    switch (keycode) {
+        case LT(2, KC_CAPS):  // 60s
+        case LT(3, KC_CAPS):  // 60s
+            return 50;
+        case SC_SENT:         // Planck
+            return 100;
+        default:              // Home Row Mods
+            return 200;
+    }
+}
+
+
+bool get_retro_tapping(uint16_t keycode, keyrecord_t *record) {
+    switch (keycode) {
+        case LT(2, KC_CAPS):  // 60s
+        case LT(3, KC_CAPS):  // 60s
+        case SC_SENT:         // Planck
+            return true;
+        default:              // Home Row Mods
+            return false;
+    }
 }
