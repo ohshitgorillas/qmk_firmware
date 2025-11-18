@@ -2,24 +2,24 @@
 
 I used the Planck keyboard for three weeks. Here are my unfiltered thoughts.
 
-## What the Fuck Was I Thinking?
+## Why would you do this to yourself? What's the point?
 
-I got this question a lot in various forms. Some of you are already deep in this hobby and use keyboards that normal people would consider unusable abominations. Those who aren't see things like the Planck and think... well, basically the same thing.
+I got these questions a lot in various forms. And they are fair, to be honest. I often looked down at the Planck and asked myself the very same questions.
 
-> Why would you do this to yourself? What's the point?
+Some of you are already deep into this hobby and already use keyboards that most people would consider unusable abominations. You already get it. Those who aren't/don't... this review is for you.
 
-And those are fair questions, to be honest. There are reasons, but it'll take some explaining. Let's start by stepping down to 60% and slaying a sacred cow: the arrow keys.
+There *are* reasons, but first, we need to start thinking about keyboards a bit differently. Let's start by stepping down to 60% and slaying a sacred cow: the arrow keys.
 
 ### Fuck Your Arrow Keys
 That's right, I said it. Go ahead: gasp, boo, hiss, clutch your fucking pearls. 
 
-To be clear, this isn't about *getting rid of* the arrow keys. Everyone needs arrow keys. What you don't need are *dedicated* arrow keys.
+To be clear, this isn't about *not using* arrow keys. Everyone needs arrow keys. What you don't need are *dedicated* arrow keys.
 
 If this upsets you, chances are you're using a bog-standard full-size or TKL keyboard. These are very straightforward to use: if you want F5, you reach up and press the F5 key; if you want Print Screen, you reach over and press the Print Screen key. Easy peasy.
 
 Here's a new way of thinking about this, though: all that reaching isn't just inefficient, it's poor ergonomics. What if the most critical functions were always right under your fingers on the home row? Stop reaching and start layering.
 
-This isn't exactly groundbreaking: cut, copy, and paste, for instance, are critical, indispensable features that have never had dedicated keys on any standardized modern layout. You don't reach across the keyboard for a key, you *chord* Ctrl (or Cmd) + X, C, or V. I'm just taking that same logic and applying it to the arrow keys.
+This isn't exactly groundbreaking: cut, copy, and paste are critical, indispensable features that have never had dedicated keys on any standardized modern layout. You don't reach across the keyboard for a key, you *chord* Ctrl (or Cmd) + X, C, or V. I'm just taking that same logic and applying it to the arrow keys.
 
 Take Caps Lock, for example: it's a useless fuck of a key taking up prime home row real estate. With the magic of programmable mechanical keyboards, we can transform it into a key that opens up a layer with things like Enter, Backspace, Delete, and arrow keys all within easy reach of home row. With the full might of QMK, we can have Caps Lock still activate on keypresses, and bring even more cool features to the home row like modifiers as well. Yes, it takes a little elbow grease to get there. Yes, it takes some retraining of your muscle memory... but for serious typists, the payoff can be significant. And fun to configure!
 

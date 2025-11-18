@@ -16,9 +16,6 @@
 
 #include "ohshitgorillas.h"
 
-#error "test"
-
-
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [0] = LAYOUT_60_ansi_tsangan_split_bs_rshift(
         // macOS main layer

@@ -1,6 +1,14 @@
-# ohshitgorillas' Tofu60 2.0 Layout
+# ohshitgorillas' 60% Layout
 
-## Physical Configuration
+This is the page for my custom 60% layout code.
+
+It's used for two of my four keyboards:
+- Luminkey LX60
+- KBDfans Tofu60 2.0
+
+### Luminkey LX60 Copper Edition
+
+### Tofu60 2.0
 - **Color**: E-Coating Black
 - **Keycaps**: Geekark Black-on-Black
 - **Switches**: HMX Retro R
