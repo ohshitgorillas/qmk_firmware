@@ -308,6 +308,7 @@ ugth: -> ught
 unbder -> under
 :usign: -> using
 :uo: -> up
+:udpat -> updat
 :wsant -> want
 :wnat -> want
 wanst -> wants
