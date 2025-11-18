@@ -7,16 +7,31 @@ It's used for two of my four keyboards:
 - KBDfans Tofu60 2.0
 
 ### Luminkey LX60 Copper Edition
+![Luminkey LX60 Copper Edition](lx60.png)
+
+- **Color**: Anodized green
+- **Accent Bar**: Copper
+- **Keycaps**: CannonKeys British Racing Green
+- **Artisan**: Gary Green Jasper by KeycapQuarry
+- **Switches**: Invokeys Matcha Reserve
+- **Plate**: PP
+- **Mounting**: 30A O-ring
+- **Foams**: None
+- **Mods**:
+    - **Feet**: Herbie's Grungebuster pads w/ adhesive
+    - Heavily force break modded
 
 ### Tofu60 2.0
+![Tofu60 2.0](tofu60-2.png)
+
 - **Color**: E-Coating Black
 - **Keycaps**: Geekark Black-on-Black
 - **Switches**: HMX Retro R
 - **Plate**: PC
-- **Mounting**: silicon socks
+- **Mounting**: Silicon socks
 - **Foams**: None
 - **Mods**:
-    - Feet: Herbie's Grungebuster pads
+    - **Feet**: Herbie's Grungebuster pads w/ adhesive
     - Taped up flex cuts on PCB
 
 ## Base Layer
@@ -24,7 +39,7 @@ It's used for two of my four keyboards:
 
 **Legend**: Short dashes "-" indicate OS-specific differences, with macOS on top and Windows on bottom. Longer em-dashes "—" indicate a tap-hold configuration, with the tap function on top and hold on the bottom.
 
-The base layer of the Tofu60 2.0 features:
+The base layer features:
 - A standard QWERTY layout.
 - Split Backspace for HHKB-like access to `\|` and `` `~ `` on the top row, moving Backspace down to above Enter.
 - A Caps Lock key that serves double duty as access to the main function layer.
