@@ -9,6 +9,7 @@ analyhsis -> analysis
 :anmd: -> and
 :amnd: -> and
 :adn: -> and
+:abd: -> and
 :abnd: -> and
 :andone -> and one
 :andteh -> and the
@@ -16,6 +17,7 @@ analyhsis -> analysis
 anyopne -> anyone
 aynway -> anyway
 anywya -> anyway
+:arbound -> around
 :asthe: -> as the
 asiude -> aside
 :atthe -> at the
@@ -25,6 +27,7 @@ baselein -> baseline
 bascially -> basically
 baiscally -> basically
 bsaically -> basically
+basiclaly -> basically
 becasue -> because
 befroe -> before
 :bfore -> before
@@ -50,6 +53,7 @@ correcdt -> correct
 idsaster -> disaster
 doies -> does
 odesn't -> doesn't
+:dwon: -> down
 :eigth -> eight
 eitehr -> either
 iether -> either
@@ -94,10 +98,12 @@ headpohnes -> headphones
 headhpones -> headphones
 hlep -> help
 :ehr: -> her
+:hihg -> high
 hwoever -> however
 howveer -> however
 husbnad -> husband
 identiucal -> identical
+:iuf: -> if
 :inm: -> in
 :int:he: -> in the
 :i:nthe -> in the
@@ -124,6 +130,7 @@ knjee -> knee
 :lsat: -> last
 :alyer: -> layer
 layhout -> layout
+:lets': -> let's
 libarry -> library
 :liek: -> like
 luike -> like
@@ -137,10 +144,13 @@ loasd -> loads
 :amking -> making
 measn -> means
 mesaure -> measure
+emnts: -> ments
+mign: -> ming
 myuch -> much
 muych -> much
 nt': -> n't
 natly: -> nately
+:enver: -> never
 nexst -> next
 nmext -> next
 nomral -> normal
@@ -158,7 +168,9 @@ oprder -> order
 :otehr -> other
 ohter -> other
 outt:here -> out there
+aprse -> parse
 piong: -> ping
+possbile -> possible
 proejct -> project
 projkect -> project
 pythoin -> python
@@ -193,6 +205,7 @@ thansk -> thanks
 thge -> the
 :hte: -> the
 :teh: -> the
+:thje: -> the
 :thier: -> their
 thjen -> then
 thsee -> these
@@ -231,11 +244,12 @@ toinght -> tonight
 :tyring -> trying
 ugth: -> ught
 unbder -> under
+:usign: -> using
 :uo: -> up
 :wsant -> want
 :wnat -> want
 wanst -> wants
-:waht: -> what
+:waht -> what
 whjat -> what
 :whta: -> what
 whenver -> whenever
@@ -254,5 +268,6 @@ worsd -> words
 :wrok: -> work
 :eyar -> year
 :yera: -> year
+your'e -> you're
 :yopur: -> your
 :yuor: -> your

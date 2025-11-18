@@ -1,4 +1,5 @@
 # things I personally struggle with misspelling
 carribean -> Caribbean
 fourty -> forty
+dispensible -> dispensable
 
