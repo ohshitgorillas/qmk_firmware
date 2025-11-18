@@ -149,14 +149,3 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         _______,  _______, _______,                                     _______,                               _______,   _______, _______
     ),
 };
-
-// OS Awareness
-bool process_detected_host_os_user(os_variant_t detected_os) {
-    if (detected_os == OS_MACOS || detected_os == OS_IOS) {
-        set_single_persistent_default_layer(0);  // macOS/iOS uses layer 0
-    } else {
-        set_single_persistent_default_layer(1);  // Everything else uses layer 1
-    }
-    return true;
-}
-
