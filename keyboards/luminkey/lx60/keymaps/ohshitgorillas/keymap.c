@@ -17,40 +17,6 @@
 #include QMK_KEYBOARD_H
 
 
-
-bool get_hold_on_other_key_press_per_key(uint16_t keycode, keyrecord_t *record) {
-    switch (keycode) {
-        case LT(2,KC_CAPS):
-        case LT(3,KC_CAPS):
-            return true;
-        default:
-            return false;
-    }
-}
-
-
-uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) {
-    switch (keycode) {
-        case LT(2,KC_CAPS):
-        case LT(3,KC_CAPS):
-            return 50;
-        default:
-            return 200;
-    }
-}
-
-
-bool get_retro_tapping(uint16_t keycode, keyrecord_t *record) {
-    switch (keycode) {
-        case LT(2, KC_CAPS):
-        case LT(3, KC_CAPS):
-            return true;
-        default:
-            return false;
-    }
-}
-
-
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [0] = LAYOUT_60_ansi_tsangan_split_bs_rshift(
         // macOS main layer
