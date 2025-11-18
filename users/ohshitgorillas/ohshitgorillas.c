@@ -33,6 +33,7 @@ void leader_end_user(void) {
     }
 
     // Personal info macros
+    else if (leader_sequence_two_keys(KC_M, KC_E)) { SEND_STRING("ohshitgorillas"); }
     else if (leader_sequence_four_keys(KC_A, KC_D, KC_D, KC_R)) { SEND_STRING(PERSONAL_ADDRESS); }
     else if (leader_sequence_three_keys(KC_P, KC_E, KC_M)) { SEND_STRING(PERSONAL_EMAIL); }
     else if (leader_sequence_three_keys(KC_W, KC_E, KC_M)) { SEND_STRING(WORK_EMAIL); }
@@ -55,12 +56,16 @@ void leader_end_user(void) {
     else if (leader_sequence_one_key(KC_N)) { tap_code(KC_F15); }          // Calculator
     else if (leader_sequence_one_key(KC_M)) { tap_code(KC_F16); }          // Music
 
-    // Two-key sequences
-    else if (leader_sequence_two_keys(KC_S, KC_M)) { toggle_spongemock(); }
-    else if (leader_sequence_two_keys(KC_A, KC_C)) { autocorrect_toggle(); }
+    // xcase toggles
     else if (leader_sequence_two_keys(KC_S, KC_C)) { enable_xcase_with(KC_UNDS); }
     else if (leader_sequence_two_keys(KC_K, KC_C)) { enable_xcase_with(KC_MINS); }
     else if (leader_sequence_two_keys(KC_C, KC_C)) { enable_xcase_with(KC_LSFT); }
+
+    // autocorrect toggle
+    else if (leader_sequence_two_keys(KC_A, KC_C)) { autocorrect_toggle(); }
+
+    // sPOnGebob mOCkING tExt ToGGle
+    else if (leader_sequence_two_keys(KC_S, KC_M)) { toggle_spongemock(); }
 }
 
 
