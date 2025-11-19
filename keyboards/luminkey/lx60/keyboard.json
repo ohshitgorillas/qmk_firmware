@@ -9,8 +9,12 @@
         "vid": "0x0410",
         "pid": "0x6001",
         "device_version": "0.0.1",
-        "force_nkro": true,
         "polling_interval": 1
+    },
+    "host": {
+        "default": {
+            "nkro": true
+        }
     },
     "build": {
         "debounce_type": "sym_eager_pk"
