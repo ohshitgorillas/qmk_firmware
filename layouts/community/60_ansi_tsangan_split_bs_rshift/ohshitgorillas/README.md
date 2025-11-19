@@ -90,7 +90,7 @@ The following table compares the timing requirements for both HRMs and the CLL:
 | `CHORDAL_HOLD` | ✓ | ✗ | Successfully prevents HRM same-hand misfires, however, we *want* same-hand activation to be easy for CLL |
 | Tap-hold decision behavior | Default (most conservative) | `HOLD_ON_OTHER_KEYPRESS` (most aggressive) | For HRMs, we want to require the entire hold duration (default behavior) to prevent misfires; for CLL, if we are pressing another key, it's probably intended as a hold/layer action |
 | `RETRO_TAPPING` |  ✗  |  ✓  | For HRMs, we want to have ample time to make our selection; for the Caps Lock key, this enables far more reliable activation |
-| `FLOW_TAP` | ✓ | Not a flow tap key by default | This feature further prevents HRM misfires by disabling 'hold' functionality on tap-flow keys mid-typing flow
+| `FLOW_TAP` | ✓ | Not a flow tap key by default | This feature further prevents HRM misfires by disabling 'hold' functionality on tap-hold keys mid-typing flow
 
 It is possible to accommodate both HRMs and CLL on the same keyboard, and to 'tame' the Caps Lock key as a dual-use tap-hold key, but it requires the full force of QMK's timing arsenal. The key features are:
 - `TAPPING_TERM`: This is the crux of all tap-hold functionality. See [the official QMK Tapping Term documentation](https://docs.qmk.fm/tap_hold#tapping-term) for more information.
@@ -146,6 +146,8 @@ Lastly, we need to disable `CHORDAL_HOLD` for the Caps Lock key, otherwise this 
 ```c
 { "matrix": [2, 0], "x": 0, "y": 2, "w": 1.75, "hand": "*"},
 ```
+
+That's it! Now your Caps Lock key functions perfectly both on tap and extremely fast holds.
 
 
 ## HHKB-style Layer
