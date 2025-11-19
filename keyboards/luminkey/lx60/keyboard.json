@@ -29,6 +29,9 @@
             "backing_size": 4096
         }
     },
+    "community_layouts": [
+        "60_ansi_tsangan_split_bs_rshift"
+    ],
     "matrix_pins": {
         "cols": [
             "A3",
