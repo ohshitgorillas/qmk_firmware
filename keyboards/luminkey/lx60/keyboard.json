@@ -1,7 +1,7 @@
 {
     "manufacturer": "luminkey",
     "keyboard_name": "lk60",
-    "url": "",
+    "url": "http://www.luminkey.com",
     "maintainer": "luminkey",
     "development_board": "bluepill",
     "bootloader": "uf2boot",
